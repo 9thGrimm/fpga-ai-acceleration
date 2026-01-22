@@ -1,4 +1,4 @@
-## Jan 19, 2025
+## Week of Jan 19th 2026
 
 * Set up GitHub repository and local workflow
 * Established note-taking split: iPad (thinking) + GitHub (logs)
@@ -8,3 +8,7 @@
 * Understood training vs inference distinction
 * Watched 3Blue1Brown NN video for intuition
 * Clarified role of layers and MAC operations
+* Completed selective reading of Chapter 6 (forward pass only)
+* Solved XOR example using affine transforms, bias, and ReLU across 3 layers
+* Reinforced understanding of nonlinearity and layer-wise computation
+* Prepared to formalize hardware mapping of neurons and layers
