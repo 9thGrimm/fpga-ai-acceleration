@@ -1,7 +1,3 @@
-# fpga-ai-acceleration
-Project Repo of Sagar Sajeev as part of FPGA AI Implementations and Learning Notes from 2026
-
-=======
 # FPGA-Based AI Acceleration on Zynq-7000
 
 This repository documents a structured, 6-month hands-on project focused on
@@ -61,5 +57,3 @@ One advanced specialization, such as:
 - ESD-safe workbench environment
 
 ---
-
-## Repository Structure
