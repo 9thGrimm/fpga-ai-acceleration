@@ -12,3 +12,8 @@
 * Solved XOR example using affine transforms, bias, and ReLU across 3 layers
 * Reinforced understanding of nonlinearity and layer-wise computation
 * Prepared to formalize hardware mapping of neurons and layers
+* Mapped XOR affine + ReLU computation to hardware primitives
+* Identified DSPs for multiplication and adder trees for accumulation
+* Mapped ReLU to comparator + mux logic
+* Assigned inputs, weights, bias, partial sums, and outputs to appropriate storage
+* Reinforced understanding of nonlinearity and multi-layer necessity
