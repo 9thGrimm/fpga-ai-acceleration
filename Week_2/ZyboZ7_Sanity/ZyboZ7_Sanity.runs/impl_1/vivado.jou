@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jan 27 00:31:59 2026
+# Process ID: 18728
+# Current directory: C:/Users/sagar/ZyboZ7_Sanity/ZyboZ7_Sanity.runs/impl_1
+# Command line: vivado.exe -log blink.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source blink.tcl -notrace
+# Log file: C:/Users/sagar/ZyboZ7_Sanity/ZyboZ7_Sanity.runs/impl_1/blink.vdi
+# Journal file: C:/Users/sagar/ZyboZ7_Sanity/ZyboZ7_Sanity.runs/impl_1\vivado.jou
+# Running On        :9THGRIMM_LEGION
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :13th Gen Intel(R) Core(TM) i9-13900HX
+# CPU Frequency     :2419 MHz
+# CPU Physical cores:24
+# CPU Logical cores :32
+# Host memory       :34086 MB
+# Swap memory       :2952 MB
+# Total Virtual     :37039 MB
+# Available Virtual :13254 MB
+#-----------------------------------------------------------
+source blink.tcl -notrace
