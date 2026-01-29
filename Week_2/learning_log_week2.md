@@ -6,3 +6,8 @@
 * Verified reset polarity and functionality on hardware
 * Completed full RTL → synth → impl → bitstream → program → validate loop
 * Practiced safe power-down and ESD handling
+* Implemented 2D VALID convolution using explicit nested loops on python
+* Used integer arithmetic suitable for FPGA mapping
+* Verified output determinism using Sobel-like kernel
+* Observed constant -8 output due to linear input gradient
+* Generated reference files for RTL testbench comparison
