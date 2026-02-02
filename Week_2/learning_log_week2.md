@@ -11,3 +11,7 @@
 * Verified output determinism using Sobel-like kernel
 * Observed constant -8 output due to linear input gradient
 * Generated reference files for RTL testbench comparison
+* Mapped Python conv2d loops to FSM + MAC hardware structure
+* Identified registers, combinational blocks, and control logic
+* Selected serial MAC architecture with accumulator
+* Finalized safe bit-widths for input, weight, and accumulation
