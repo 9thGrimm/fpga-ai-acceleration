@@ -1,3 +1,5 @@
+`timescale 1ns / 1ps
+
 module conv2d_8x8_3x3 #(
   parameter int PIX_W  = 8,
   parameter int W_W    = 3,
