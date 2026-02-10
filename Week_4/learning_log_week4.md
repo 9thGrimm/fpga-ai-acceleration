@@ -42,7 +42,10 @@ This avoids overwriting rows that are still required for convolution.
 - Shift registers = column history
 - MAC = computation
 
-### Outcome
-- Clear understanding of how rows are stored, shifted, and reused
-- Resolved confusion around “where row r is stored before becoming LB1”
-- Architecture frozen and ready for RTL implementation
+## Line Buffer RTL
+
+- Implemented streaming 3×3 line buffer using explicit LB2/LB1/CUR buffers
+- Designed column shift registers to form sliding 3×3 windows
+- Implemented row-boundary buffer rotation without overwriting active rows
+- Generated window_valid based on row/column readiness
+- RTL passes Vivado syntax checks
