@@ -49,3 +49,32 @@ This avoids overwriting rows that are still required for convolution.
 - Implemented row-boundary buffer rotation without overwriting active rows
 - Generated window_valid based on row/column readiness
 - RTL passes Vivado syntax checks
+
+### Streaming Conv2D Architecture Completed
+
+The project has successfully transitioned from a stored-image convolution model
+to a fully streaming, hardware-realistic Conv2D pipeline.
+
+### Implemented Components
+
+#### 1. Line Buffer Window Generator (Streaming)
+- Explicit `LB2 / LB1 / CUR_ROW` buffer architecture
+- Column shift registers form sliding 3×3 windows
+- Row-boundary rotation:
+  - `LB2 ← LB1`
+  - `LB1 ← CUR_ROW`
+- Generates `window_valid` when `row ≥ 2` and `col ≥ 2`
+
+#### 2. Streaming MAC Integration
+- Connected `line_buffer_3x3` to `mac9`
+- Achieved true streaming behavior:
+  - 1 pixel per cycle input
+  - 1 output per cycle (steady state)
+- No frame buffering required
+
+#### 3. Functional Streaming Validation
+- Testbench streams 64 pixels (8×8 raster order)
+- Confirmed:
+  - First valid output at `(row=2, col=2)`
+  - Exactly 36 valid outputs (6×6 VALID convolution)
+  - Continuous output once pipeline is filled

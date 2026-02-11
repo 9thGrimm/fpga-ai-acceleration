@@ -1,0 +1,40 @@
+Time resolution is 1 ps
+out[0] at row=2 col=2 y=-7
+out[1] at row=2 col=3 y=-7
+out[2] at row=2 col=4 y=-7
+out[3] at row=2 col=5 y=-7
+out[4] at row=2 col=6 y=-7
+out[5] at row=2 col=7 y=16
+out[6] at row=3 col=2 y=-7
+out[7] at row=3 col=3 y=-7
+out[8] at row=3 col=4 y=-7
+out[9] at row=3 col=5 y=-7
+out[10] at row=3 col=6 y=-7
+out[11] at row=3 col=7 y=17
+out[12] at row=4 col=2 y=-7
+out[13] at row=4 col=3 y=-7
+out[14] at row=4 col=4 y=-7
+out[15] at row=4 col=5 y=-7
+out[16] at row=4 col=6 y=-7
+out[17] at row=4 col=7 y=17
+out[18] at row=5 col=2 y=-7
+out[19] at row=5 col=3 y=-7
+out[20] at row=5 col=4 y=-7
+out[21] at row=5 col=5 y=-7
+out[22] at row=5 col=6 y=-7
+out[23] at row=5 col=7 y=17
+out[24] at row=6 col=2 y=-7
+out[25] at row=6 col=3 y=-7
+out[26] at row=6 col=4 y=-7
+out[27] at row=6 col=5 y=-7
+out[28] at row=6 col=6 y=-7
+out[29] at row=6 col=7 y=17
+out[30] at row=7 col=2 y=-7
+out[31] at row=7 col=3 y=-7
+out[32] at row=7 col=4 y=-7
+out[33] at row=7 col=5 y=-7
+out[34] at row=7 col=6 y=-7
+out[35] at row=7 col=7 y=17
+
+ PASS: out_valid count = 36 (expected 36)
+$finish called at time : 865 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_2/new/tb_streaming_count.sv" Line 63
