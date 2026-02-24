@@ -3,6 +3,7 @@ sv xil_defaultlib  \
 "../../../../CONV_2D_RTL.srcs/sources_1/new/conv2d_streaming_top.sv" \
 "../../../../CONV_2D_RTL.srcs/sources_1/new/line_buffer_3x3.sv" \
 "../../../../CONV_2D_RTL.srcs/sources_1/new/mac9.sv" \
+"../../../../CONV_2D_RTL.srcs/sources_1/new/maxpool_2x2_streaming.sv" \
 "../../../../CONV_2D_RTL.srcs/sources_1/new/mul_unit.sv" \
 "../../../../CONV_2D_RTL.srcs/sources_1/new/relu.sv" \
 "../../../../CONV_2D_RTL.srcs/sim_2/new/tb_streaming_count.sv" \

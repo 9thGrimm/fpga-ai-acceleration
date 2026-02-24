@@ -11,12 +11,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="250.500 ns"></ZoomStartTime>
-      <ZoomEndTime time="661.001 ns"></ZoomEndTime>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,000.001 ns"></ZoomEndTime>
       <Cursor1Time time="335.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="195"></NameColumnWidth>
+      <NameColumnWidth column_width="183"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="12" />
@@ -62,6 +62,7 @@
    <wvobject fp_name="/tb_streaming_count/out_count" type="array">
       <obj_property name="ElementShortName">out_count[31:0]</obj_property>
       <obj_property name="ObjectShortName">out_count[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_streaming_count/PIX_W" type="array">
       <obj_property name="ElementShortName">PIX_W[31:0]</obj_property>

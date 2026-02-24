@@ -13,6 +13,7 @@ Compiling module xil_defaultlib.line_buffer_3x3
 Compiling module xil_defaultlib.mul_unit(P_W=11)
 Compiling module xil_defaultlib.mac9_default
 Compiling module xil_defaultlib.relu
+Compiling module xil_defaultlib.maxpool_2x2_streaming
 Compiling module xil_defaultlib.conv2d_streaming_top
 Compiling module xil_defaultlib.tb_streaming_count
 Compiling module xil_defaultlib.glbl
