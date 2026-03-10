@@ -1,29 +1,14 @@
-## Week 6 – Sunday (Multi-Channel Conv1 Architecture)
+\## Week 6 – Multi-Channel Conv1 Engine
 
-Designed architecture for Conv1 with 4 output channels.
 
-Input:
-16×16×1 spectrogram frame
 
-Kernel:
-3×3 per channel
-4 output channels
+\- Created runtime-weight 3×3 MAC module (`mac9\_runtime`)
 
-Architecture decision:
-Time-multiplex MAC across channels.
+\- Implemented `conv1\_engine` with 4 output channels
 
-Implementation plan:
-- Single 9-multiplier MAC block reused
-- Channel FSM iterates over 4 kernels
-- Weight storage = 36 int8 values
+\- Added weight storage as `weight\[channel]\[kernel\_idx]`
 
-Throughput:
-1 convolution window every 4 cycles
+\- Added channel FSM to reuse one MAC across 4 kernels
 
-Resource planning:
-DSP slices = 9
-Weight storage = 288 bits
-Line buffers unchanged
+\- Prepared architecture for multi-channel Conv1 scaling
 
-Pipeline:
-Pixel → Line Buffer → Window → MAC → ReLU → Pool
