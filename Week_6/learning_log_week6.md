@@ -32,3 +32,34 @@ Conclusion:
   - a FIFO of windows, or
   - parallel MAC instances
 - Chosen next step: implement ready/valid handshake between line buffer and Conv1 engine
+
+### Problem
+After introducing multi-channel Conv1 processing, the consumer (Conv1 engine) required multiple cycles per window, while the producer (line buffer) continued producing windows every cycle.
+
+This created a throughput mismatch, causing dropped windows and incomplete output coverage.
+
+### Root Cause
+The testbench and upstream logic did not honor backpressure. Input pixels continued to advance every cycle regardless of the readiness of the downstream compute engine.
+
+### Solution
+Implemented full ready/valid handshake propagation:
+
+Conv1 Engine → window_ready  
+Line Buffer → advances only when (in_valid && window_ready)
+
+Additionally:
+- propagated `in_ready` to the top module
+- modified testbench to hold input pixel until accepted
+
+### Result
+Producer and consumer are now rate-matched.
+
+The system correctly processes:
+- 64 input pixels
+- 36 convolution windows
+- 4 output channels per window
+
+Final output count: **144 outputs**
+
+### Key Learning
+Streaming hardware systems must propagate backpressure upstream. Any stage that can stall must expose a ready signal so producers do not overrun consumers.

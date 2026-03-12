@@ -11,6 +11,7 @@ module conv1_engine #(
   input  logic window_valid,
   input  logic signed [PIX_W-1:0] win [0:8],
 
+  output logic window_ready,
   output logic conv_valid,
   output logic signed [ACC_W-1:0] conv_y,
   output logic [1:0] channel_idx
@@ -31,6 +32,8 @@ module conv1_engine #(
   logic [1:0] ch;
 
   assign channel_idx = ch;
+  
+  assign window_ready = !busy;
 
   // Example weights
   initial begin

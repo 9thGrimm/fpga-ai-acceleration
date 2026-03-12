@@ -7,6 +7,7 @@ module line_buffer_3x3 #(
    input logic rst_n,
    
    input logic in_valid,
+   input logic window_ready,
    input logic signed [PIX_W-1:0] in_pixel,
    
    output logic window_valid,
@@ -91,7 +92,7 @@ module line_buffer_3x3 #(
       cur[0] <= '0; cur[1] <= '0; cur[2] <= '0; cur[3] <= '0;
       cur[4] <= '0; cur[5] <= '0; cur[6] <= '0; cur[7] <= '0;
 
-    end else if (in_valid) begin
+    end else if (in_valid && window_ready) begin
         // Write incoming pixel into CUR at [col]
       unique case (col)
         3'd0: cur[0] <= in_pixel;

@@ -7,6 +7,7 @@ module tb_conv1_streaming_top;
 
   logic clk, rst_n;
   logic in_valid;
+  logic in_ready;
   logic signed [PIX_W-1:0] in_pixel;
 
   logic out_valid;
@@ -22,6 +23,7 @@ module tb_conv1_streaming_top;
     .rst_n(rst_n),
     .in_valid(in_valid),
     .in_pixel(in_pixel),
+    .in_ready(in_ready),
     .out_valid(out_valid),
     .out_y(out_y),
     .channel_idx(channel_idx),
@@ -41,12 +43,20 @@ module tb_conv1_streaming_top;
     #20;
     rst_n = 1;
 
-    @(posedge clk);
+    i = 0;
     in_valid = 1;
-    for (i = 0; i < 64; i++) begin
-      in_pixel = $signed(i);
-      @(posedge clk);
+    in_pixel = $signed(0);
+
+    while (i < 64) begin
+     @(posedge clk);
+     if (in_ready) begin
+        i = i + 1;
+        if (i < 64)
+            in_pixel = $signed(i);
+     end
     end
+
+    @(posedge clk);
     in_valid = 0;
     in_pixel = '0;
 
