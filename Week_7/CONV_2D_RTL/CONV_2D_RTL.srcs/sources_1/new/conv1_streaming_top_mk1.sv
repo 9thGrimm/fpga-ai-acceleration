@@ -66,6 +66,18 @@ module conv1_streaming_top_mk1 #(
     .out_y(relu_y)
   );
   
+  feature_map_buffer #(
+  .DATA_W(ACC_W)
+  ) u_fmap (
+  .clk(clk),
+  .rst_n(rst_n),
+  .in_valid(out_valid),
+  .in_data(out_y),
+  .channel_idx(channel_idx),
+  .row_idx(row_idx),
+  .col_idx(col_idx)
+  );
+  
   logic out_valid_r;
   logic signed [ACC_W-1:0] out_y_r;
   logic [1:0] channel_idx_r;

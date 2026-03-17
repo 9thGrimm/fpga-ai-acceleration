@@ -1,6 +1,11 @@
-## Week 7 – Sunday (Pipeline Register Insertion)
+## Week 7
 
 - Added one pipeline register stage after Conv1 + ReLU output
 - Registered output data, valid, and channel index
 - Improved timing-friendliness of the streaming datapath
 - Verified functionality preserved after pipelining
+- Implemented `feature_map_buffer` to store Conv1 outputs
+- Buffer shape: 4 channels × 6 rows × 6 cols
+- Mapped streaming valid coordinates `(row_idx, col_idx)` from 2..7 into stored indices 0..5
+- Integrated write-side storage for multi-channel Conv1 outputs
+- Prepared design for full Conv1 layer buffering
