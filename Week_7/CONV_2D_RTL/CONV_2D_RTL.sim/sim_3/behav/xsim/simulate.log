@@ -145,4 +145,24 @@ out[142] row=0 col=0 ch=3 y=0
 out[143] row=0 col=0 ch=0 y=0
 
 PASS: output count = 144 (expected 144)
-$finish called at time : 4065 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_3/new/tb_conv1_streaming_top.sv" Line 72
+
+--- Channel Write Counts ---
+Channel 0 writes = 36
+Channel 1 writes = 36
+Channel 2 writes = 36
+Channel 3 writes = 36
+
+--- Feature Map Readback ---
+fmap[0][0][0] = x
+fmap[1][0][0] = x
+fmap[2][0][0] = x
+fmap[3][0][0] = x
+fmap[0][2][3] = 7
+fmap[1][2][3] = 0
+fmap[2][2][3] = 0
+fmap[3][2][3] = 0
+fmap[0][5][5] = 7
+fmap[1][5][5] = 0
+fmap[2][5][5] = 0
+fmap[3][5][5] = 0
+$finish called at time : 4065 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_3/new/tb_conv1_streaming_top.sv" Line 103
