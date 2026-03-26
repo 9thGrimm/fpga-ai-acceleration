@@ -19,4 +19,8 @@ Design updates:
 Throughput impact:
 - Processing time per window doubles (from 4 to 8 cycles)
 
-This forms the basis of a true multi-channel CNN layer for AMR
+- Implemented `mac9_dual_channel` for I/Q-aware convolution
+- Added sequential accumulation across I and Q channels
+- FSM states: IDLE → MAC_I → MAC_Q → DONE
+- Reused existing runtime MAC instead of duplicating compute
+- Prepared dual-channel compute block for multi-channel Conv1 integration
