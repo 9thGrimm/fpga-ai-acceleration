@@ -24,3 +24,13 @@ Throughput impact:
 - FSM states: IDLE → MAC_I → MAC_Q → DONE
 - Reused existing runtime MAC instead of duplicating compute
 - Prepared dual-channel compute block for multi-channel Conv1 integration
+
+- Built structural testbench for `conv1_iq_streaming_top`
+- Streamed 8×8 I/Q input pairs into dual line-buffer path
+- Verified multi-channel Conv1 output count
+- Confirmed 4-channel output distribution across 36 windows
+
+- Propagated `window_ready` to top-level as `in_ready`
+- Updated I/Q streaming top to stall both line buffers together
+- Modified testbench to hold `(I,Q)` samples until accepted
+- Fixed producer/consumer throughput mismatch for dual-channel Conv1 path
