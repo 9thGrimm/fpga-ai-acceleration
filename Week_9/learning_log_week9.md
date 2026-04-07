@@ -1,31 +1,54 @@
-## Week 9 – Monday (I/Q Conv1 Feature Map Integration)
+## Week 9 – Conv1 Feature Map & Pooling Integration (I/Q Path)
 
 ### Objective
-Extend the I/Q streaming Conv1 pipeline to store outputs in a structured feature map buffer corresponding to the full Conv1 output dimensions.
+Extend the I/Q-aware Conv1 pipeline to support:
+- feature map storage for Conv1 outputs
+- multi-channel 2×2 MaxPooling
 
-### Key Updates
+---
+
+### Conv1 Output Feature Map (Monday)
 
 - Implemented `feature_map_buffer_iq` for storing Conv1 outputs
 - Updated buffer dimensions to:
-  - 4 channels × 14 rows × 6 columns
-- Mapped streaming indices to buffer indices:
-  - `row_idx 2..15 → 0..13`
-  - `col_idx 2..7  → 0..5`
-- Integrated feature map buffer into `conv1_iq_streaming_top`
+  - 4 output channels × 14 rows × 6 cols
+- Mapped streaming indices:
+  - row_idx 2..15 → stored rows 0..13
+  - col_idx 2..7  → stored cols 0..5
+- Integrated feature map buffer into I/Q Conv1 streaming top
+- Expanded row index width to support larger spatial dimensions
+- Fixed line buffer issues:
+  - corrected row counter width
+  - fixed last-column write into LB1
 
-### Line Buffer Fixes
+---
 
-- Expanded `row` counter from 3-bit to 5-bit to support larger input height
-- Fixed row-boundary write issue:
-  - ensured last pixel of each row is correctly written into LB1
-- Maintained synchronized backpressure across I/Q line buffers
+### Multi-Channel MaxPooling (Tuesday)
 
-### Dataflow Established
+- Implemented `maxpool_iq` for 2×2 stride-2 pooling
+- Supports per-channel pooling (no channel mixing)
+- Designed streaming pooling architecture:
+  - maintains previous row and current row buffers
+  - computes max over 2×2 windows
+- Pooling condition:
+  - triggered at (row_idx odd, col_idx odd)
+- Output feature map size:
+  - 7 × 3 × 4
+- Preserved channel-wise independence throughout pooling stage
 
-I/Q Input → Line Buffers → Conv1 (I/Q) → ReLU → Feature Map Buffer
+---
 
-### Outcome
+### Key Learnings
 
-- Full I/Q Conv1 pipeline now supports correct spatial dimensions
-- Output storage aligned with CNN layer expectations (14×6×4)
-- Design compiles cleanly with updated index widths and buffer integration
+- Handling spatial indexing across streaming pipelines requires careful alignment
+- Multi-channel designs introduce additional state tracking (per-channel buffers)
+- Small timing bugs (like last-column writes) can silently corrupt data
+- Streaming pooling requires thinking in terms of dataflow, not static matrices
+
+---
+
+### Status
+
+- Conv1 I/Q pipeline: functional and verified
+- Feature map buffer: integrated
+- MaxPool: implemented and ready for integration
