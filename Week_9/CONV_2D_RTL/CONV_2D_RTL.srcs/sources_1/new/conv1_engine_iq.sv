@@ -111,7 +111,7 @@ module conv1_engine_iq #(
       ch         <= 2'd0;
       start_mac  <= 1'b0;
       conv_valid <= 1'b0;
-      conv_y     <= '0;
+      conv_y     <= 1'b0;
 
       win_I_reg[0] <= '0; win_I_reg[1] <= '0; win_I_reg[2] <= '0;
       win_I_reg[3] <= '0; win_I_reg[4] <= '0; win_I_reg[5] <= '0;

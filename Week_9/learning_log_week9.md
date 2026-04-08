@@ -1,66 +1,42 @@
-## Week 9 – Conv1 Feature Map & Pooling Integration (I/Q Path)
+Date: Week 9
 
-### Objective
-Extend the I/Q-aware Conv1 pipeline to support:
-- feature map storage for Conv1 outputs
-- multi-channel 2×2 MaxPooling
+Topic: complete CNN Layer1 I/Q pipeline with Conv1, ReLU, MaxPool, and feature map buffer
 
----
+- Built end-to-end streaming CNN pipeline:
+  I/Q → Line Buffer → Conv1 → ReLU → MaxPool → Feature Map Buffer
+- Implemented multi-channel Conv1 engine (4 output channels)
+- Integrated streaming 3x3 line buffers for I/Q paths
+- Added ReLU activation stage
 
-### Conv1 Output Feature Map (Monday)
+- Implemented maxpool_iq:
+  - 2x2 stride-2 pooling
+  - per-channel independence
+  - row-buffer-based streaming architecture
+  - correct pooling trigger (odd row/col)
 
-- Implemented `feature_map_buffer_iq` for storing Conv1 outputs
-- Updated buffer dimensions to:
-  - 4 output channels × 14 rows × 6 cols
-- Mapped streaming indices:
-  - row_idx 2..15 → stored rows 0..13
-  - col_idx 2..7  → stored cols 0..5
-- Integrated feature map buffer into I/Q Conv1 streaming top
-- Expanded row index width to support larger spatial dimensions
-- Fixed line buffer issues:
-  - corrected row counter width
-  - fixed last-column write into LB1
+- Developed feature_map_buffer_iq:
+  - initially designed for conv-map storage (14x6)
+  - later corrected to store pooled outputs (3x3 per channel)
+  - fixed indexing mismatch (conv-space vs pool-space)
+  - added reset initialization for deterministic simulation
 
----
+- Debug & fixes:
+  - Fixed critical ReLU width mismatch (16-bit → 32-bit)
+  - Eliminated partial Z propagation in pipeline
+  - Corrected maxpool boundary/indexing issues
+  - Fixed feature map write addressing bug
+  - Verified valid/ready handshake behavior under backpressure
 
-### Multi-Channel MaxPooling (Tuesday)
+- Testbench improvements:
+  - Added handshake-aware stimulus
+  - Introduced stage-wise debug logs (conv/relu/pool)
+  - Implemented unknown (X/Z) detection counters
+  - Added full feature map dump (matrix + indexed view)
 
-- Implemented `maxpool_iq` for 2×2 stride-2 pooling
-- Supports per-channel pooling (no channel mixing)
-- Designed streaming pooling architecture:
-  - maintains previous row and current row buffers
-  - computes max over 2×2 windows
-- Pooling condition:
-  - triggered at (row_idx odd, col_idx odd)
-- Output feature map size:
-  - 7 × 3 × 4
-- Preserved channel-wise independence throughout pooling stage
+- Verification results:
+  - 36 pooled outputs generated (expected)
+  - 9 outputs per channel confirmed
+  - Zero unknown propagation across all stages
+  - Correct spatial mapping validated in feature map
 
----
-
-### Full CNN Layer Integration (Wednesday)
-
-- Integrated full pipeline:
-  I/Q → Conv1 → ReLU → MaxPool → Feature Map Buffer
-- Built `cnn_layer1_iq_top` as first complete CNN layer
-- Connected multi-channel Conv1 with streaming MaxPool
-- Established full dataflow from input to pooled feature map
-- Verified structural integration across all modules
-
----
-
-### Key Learnings
-
-- Handling spatial indexing across streaming pipelines requires careful alignment
-- Multi-channel designs introduce additional state tracking (per-channel buffers)
-- Small timing bugs (like last-column writes) can silently corrupt data
-- Streaming pooling requires thinking in terms of dataflow, not static matrices
-
----
-
-### Status
-
-- Conv1 I/Q pipeline: functional and verified
-- Feature map buffer: integrated
-- MaxPool: implemented and ready for integration\
-- CNN Layer 1 Integrated with other Components of the data flow
+This commit marks a fully functional and verified CNN Layer1 hardware pipeline.
