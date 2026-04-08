@@ -38,6 +38,17 @@ Extend the I/Q-aware Conv1 pipeline to support:
 
 ---
 
+### Full CNN Layer Integration (Wednesday)
+
+- Integrated full pipeline:
+  I/Q → Conv1 → ReLU → MaxPool → Feature Map Buffer
+- Built `cnn_layer1_iq_top` as first complete CNN layer
+- Connected multi-channel Conv1 with streaming MaxPool
+- Established full dataflow from input to pooled feature map
+- Verified structural integration across all modules
+
+---
+
 ### Key Learnings
 
 - Handling spatial indexing across streaming pipelines requires careful alignment
@@ -51,4 +62,5 @@ Extend the I/Q-aware Conv1 pipeline to support:
 
 - Conv1 I/Q pipeline: functional and verified
 - Feature map buffer: integrated
-- MaxPool: implemented and ready for integration
+- MaxPool: implemented and ready for integration\
+- CNN Layer 1 Integrated with other Components of the data flow
