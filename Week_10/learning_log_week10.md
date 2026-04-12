@@ -8,4 +8,8 @@ Topic: Quantization Integration between ReLU and Maxpool Stage
 * Added stage-wise debug + X/Z checks in TB
 * Verified full pipeline: 64 inputs → 36 outputs (9/channel)
 * No unknowns; outputs correct and stable
+* Confirmed zero unknown propagation and stable outputs
+* Added RTL output dump (channel, row, col, value format)
+* Developed Python script to load RTL output and reconstruct feature maps
+* Verified Python reconstruction matches RTL feature map
 

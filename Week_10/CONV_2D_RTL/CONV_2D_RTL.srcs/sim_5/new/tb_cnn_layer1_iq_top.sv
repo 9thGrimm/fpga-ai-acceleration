@@ -13,6 +13,7 @@ module tb_cnn_layer1_iq_top;
   logic signed [PIX_W-1:0] in_I, in_Q;
 
   integer i, r, c, ch;
+  integer f;
   integer pool_count;
   integer timeout_cycles;
   integer ch_count [0:3];
@@ -36,6 +37,10 @@ module tb_cnn_layer1_iq_top;
   // ---------------- Clock ----------------
   initial clk = 1'b0;
   always #5 clk = ~clk;
+  
+  initial begin
+    f = $fopen("rtl_out.txt", "w");
+  end
 
   // ---------------- Main stimulus ----------------
   initial begin
@@ -271,5 +276,15 @@ module tb_cnn_layer1_iq_top;
       pool_count = pool_count + 1;
     end
   end
+  
+  always @(posedge clk) begin
+  if (dut.pool_valid) begin
+    $fwrite(f, "%0d %0d %0d %0d\n",
+            dut.pool_ch,
+            dut.pool_row,
+            dut.pool_col,
+            dut.pool_y);
+  end
+end
 
 endmodule
