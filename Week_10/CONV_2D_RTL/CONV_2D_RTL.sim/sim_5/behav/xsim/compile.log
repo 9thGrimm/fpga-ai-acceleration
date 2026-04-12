@@ -1,0 +1,36 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/conv1_engine_iq.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1_engine_iq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/line_buffer_3x3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module line_buffer_3x3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/mac9_dual_channel.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac9_dual_channel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/mac9_runtime.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac9_runtime
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/relu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module relu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/conv1_iq_streaming_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1_iq_streaming_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/conv1_engine.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1_engine
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/feature_map_buffer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module feature_map_buffer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/conv1_streaming_top_mk1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module conv1_streaming_top_mk1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/mul_unit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mul_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/mac9.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mac9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/maxpool_2x2_streaming.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxpool_2x2_streaming
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/iq_stream_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module iq_stream_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/feature_map_buffer_iq.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module feature_map_buffer_iq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/maxpool_iq.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module maxpool_iq
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/cnn_layer1_iq_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cnn_layer1_iq_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sources_1/new/quantizer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module quantizer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_5/new/tb_cnn_layer1_iq_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_cnn_layer1_iq_top
