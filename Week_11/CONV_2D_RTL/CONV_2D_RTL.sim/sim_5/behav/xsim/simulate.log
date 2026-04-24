@@ -1,0 +1,1954 @@
+Time resolution is 1 ps
+
+==============================================
+Starting input stream
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=0 in_pixel=0
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=0 in_pixel=64
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=1 in_pixel=1
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=1 in_pixel=65
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=2 in_pixel=2
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=2 in_pixel=66
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=3 in_pixel=3
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=3 in_pixel=67
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=4 in_pixel=4
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=4 in_pixel=68
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=5 in_pixel=5
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=5 in_pixel=69
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=6 in_pixel=6
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=6 in_pixel=70
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=7 in_pixel=7
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=7 in_pixel=71
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=0 in_pixel=8
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=0 in_pixel=72
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=1 in_pixel=9
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=1 in_pixel=73
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=2 in_pixel=10
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=2 in_pixel=74
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=3 in_pixel=11
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=3 in_pixel=75
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=4 in_pixel=12
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=4 in_pixel=76
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=5 in_pixel=13
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=5 in_pixel=77
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=6 in_pixel=14
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=6 in_pixel=78
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=7 in_pixel=15
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=7 in_pixel=79
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=0 in_pixel=16
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=0 in_pixel=80
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=1 in_pixel=17
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=1 in_pixel=81
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=2 in_pixel=18
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=2
+  TOP  = 0 1 2
+  MID  = 8 9 10
+  BOT  = 16 17 18
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=2  w=0 1 2 | 8 9 10 | 16 17 18
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=2 in_pixel=82
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=2
+  TOP  = 64 65 66
+  MID  = 72 73 74
+  BOT  = 80 81 82
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=2  w=64 65 66 | 72 73 74 | 80 81 82
+
+==============================================
+WINDOW @ t=215000
+row=2 col=2
+---- I WINDOW ----
+0 1 2
+8 9 10
+16 17 18
+---- Q WINDOW ----
+64 65 66
+72 73 74
+80 81 82
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=3 in_pixel=19
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=3
+  TOP  = 1 2 3
+  MID  = 9 10 11
+  BOT  = 17 18 19
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=3  w=1 2 3 | 9 10 11 | 17 18 19
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=3 in_pixel=83
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=3
+  TOP  = 65 66 67
+  MID  = 73 74 75
+  BOT  = 81 82 83
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=3  w=65 66 67 | 73 74 75 | 81 82 83
+
+==============================================
+WINDOW @ t=225000
+row=2 col=3
+---- I WINDOW ----
+1 2 3
+9 10 11
+17 18 19
+---- Q WINDOW ----
+65 66 67
+73 74 75
+81 82 83
+==============================================
+RAW_CONV ch=1 row=2 col=2 y=-56
+RAW_CONV ch=2 row=2 col=2 y=8
+RAW_CONV ch=3 row=2 col=2 y=96
+RAW_CONV ch=0 row=2 col=2 y=9
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=4 in_pixel=20
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=4
+  TOP  = 2 3 4
+  MID  = 10 11 12
+  BOT  = 18 19 20
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=4  w=2 3 4 | 10 11 12 | 18 19 20
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=4 in_pixel=84
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=4
+  TOP  = 66 67 68
+  MID  = 74 75 76
+  BOT  = 82 83 84
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=4  w=66 67 68 | 74 75 76 | 82 83 84
+
+==============================================
+WINDOW @ t=445000
+row=2 col=4
+---- I WINDOW ----
+2 3 4
+10 11 12
+18 19 20
+---- Q WINDOW ----
+66 67 68
+74 75 76
+82 83 84
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=5 in_pixel=21
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=5
+  TOP  = 3 4 5
+  MID  = 11 12 13
+  BOT  = 19 20 21
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=5  w=3 4 5 | 11 12 13 | 19 20 21
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=5 in_pixel=85
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=5
+  TOP  = 67 68 69
+  MID  = 75 76 77
+  BOT  = 83 84 85
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=5  w=67 68 69 | 75 76 77 | 83 84 85
+
+==============================================
+WINDOW @ t=455000
+row=2 col=5
+---- I WINDOW ----
+3 4 5
+11 12 13
+19 20 21
+---- Q WINDOW ----
+67 68 69
+75 76 77
+83 84 85
+==============================================
+RAW_CONV ch=1 row=2 col=4 y=-56
+RAW_CONV ch=2 row=2 col=4 y=8
+RAW_CONV ch=3 row=2 col=4 y=100
+RAW_CONV ch=0 row=2 col=4 y=11
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=6 in_pixel=22
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=6
+  TOP  = 4 5 6
+  MID  = 12 13 14
+  BOT  = 20 21 22
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=6  w=4 5 6 | 12 13 14 | 20 21 22
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=6 in_pixel=86
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=6
+  TOP  = 68 69 70
+  MID  = 76 77 78
+  BOT  = 84 85 86
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=6  w=68 69 70 | 76 77 78 | 84 85 86
+
+==============================================
+WINDOW @ t=675000
+row=2 col=6
+---- I WINDOW ----
+4 5 6
+12 13 14
+20 21 22
+---- Q WINDOW ----
+68 69 70
+76 77 78
+84 85 86
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=7 in_pixel=23
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=7
+  TOP  = 5 6 7
+  MID  = 13 14 15
+  BOT  = 21 22 23
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=7  w=5 6 7 | 13 14 15 | 21 22 23
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=7 in_pixel=87
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=7
+  TOP  = 69 70 71
+  MID  = 77 78 79
+  BOT  = 85 86 87
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=7  w=69 70 71 | 77 78 79 | 85 86 87
+
+==============================================
+WINDOW @ t=685000
+row=2 col=7
+---- I WINDOW ----
+5 6 7
+13 14 15
+21 22 23
+---- Q WINDOW ----
+69 70 71
+77 78 79
+85 86 87
+==============================================
+RAW_CONV ch=1 row=2 col=6 y=-56
+RAW_CONV ch=2 row=2 col=6 y=8
+RAW_CONV ch=3 row=2 col=6 y=104
+RAW_CONV ch=0 row=2 col=6 y=13
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=0 in_pixel=24
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=0 in_pixel=88
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=1 in_pixel=25
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=1 in_pixel=89
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=2 in_pixel=26
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=2
+  TOP  = 8 9 10
+  MID  = 16 17 18
+  BOT  = 24 25 26
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=2  w=8 9 10 | 16 17 18 | 24 25 26
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=2 in_pixel=90
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=2
+  TOP  = 72 73 74
+  MID  = 80 81 82
+  BOT  = 88 89 90
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=2  w=72 73 74 | 80 81 82 | 88 89 90
+
+==============================================
+WINDOW @ t=925000
+row=3 col=2
+---- I WINDOW ----
+8 9 10
+16 17 18
+24 25 26
+---- Q WINDOW ----
+72 73 74
+80 81 82
+88 89 90
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=3 in_pixel=27
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=3
+  TOP  = 9 10 11
+  MID  = 17 18 19
+  BOT  = 25 26 27
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=3  w=9 10 11 | 17 18 19 | 25 26 27
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=3 in_pixel=91
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=3
+  TOP  = 73 74 75
+  MID  = 81 82 83
+  BOT  = 89 90 91
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=3  w=73 74 75 | 81 82 83 | 89 90 91
+
+==============================================
+WINDOW @ t=935000
+row=3 col=3
+---- I WINDOW ----
+9 10 11
+17 18 19
+25 26 27
+---- Q WINDOW ----
+73 74 75
+81 82 83
+89 90 91
+==============================================
+RAW_CONV ch=1 row=3 col=2 y=-56
+RAW_CONV ch=2 row=3 col=2 y=8
+RAW_CONV ch=3 row=3 col=2 y=112
+RAW_CONV ch=0 row=3 col=2 y=17
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=4 in_pixel=28
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=4
+  TOP  = 10 11 12
+  MID  = 18 19 20
+  BOT  = 26 27 28
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=4  w=10 11 12 | 18 19 20 | 26 27 28
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=4 in_pixel=92
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=4
+  TOP  = 74 75 76
+  MID  = 82 83 84
+  BOT  = 90 91 92
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=4  w=74 75 76 | 82 83 84 | 90 91 92
+
+==============================================
+WINDOW @ t=1155000
+row=3 col=4
+---- I WINDOW ----
+10 11 12
+18 19 20
+26 27 28
+---- Q WINDOW ----
+74 75 76
+82 83 84
+90 91 92
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=5 in_pixel=29
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=5
+  TOP  = 11 12 13
+  MID  = 19 20 21
+  BOT  = 27 28 29
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=5  w=11 12 13 | 19 20 21 | 27 28 29
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=5 in_pixel=93
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=5
+  TOP  = 75 76 77
+  MID  = 83 84 85
+  BOT  = 91 92 93
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=5  w=75 76 77 | 83 84 85 | 91 92 93
+
+==============================================
+WINDOW @ t=1165000
+row=3 col=5
+---- I WINDOW ----
+11 12 13
+19 20 21
+27 28 29
+---- Q WINDOW ----
+75 76 77
+83 84 85
+91 92 93
+==============================================
+RAW_CONV ch=1 row=3 col=4 y=-56
+RAW_CONV ch=2 row=3 col=4 y=8
+RAW_CONV ch=3 row=3 col=4 y=116
+RAW_CONV ch=0 row=3 col=4 y=19
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=6 in_pixel=30
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=6
+  TOP  = 12 13 14
+  MID  = 20 21 22
+  BOT  = 28 29 30
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=6  w=12 13 14 | 20 21 22 | 28 29 30
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=6 in_pixel=94
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=6
+  TOP  = 76 77 78
+  MID  = 84 85 86
+  BOT  = 92 93 94
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=6  w=76 77 78 | 84 85 86 | 92 93 94
+
+==============================================
+WINDOW @ t=1385000
+row=3 col=6
+---- I WINDOW ----
+12 13 14
+20 21 22
+28 29 30
+---- Q WINDOW ----
+76 77 78
+84 85 86
+92 93 94
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=7 in_pixel=31
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=7
+  TOP  = 13 14 15
+  MID  = 21 22 23
+  BOT  = 29 30 31
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=7  w=13 14 15 | 21 22 23 | 29 30 31
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=7 in_pixel=95
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=7
+  TOP  = 77 78 79
+  MID  = 85 86 87
+  BOT  = 93 94 95
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=7  w=77 78 79 | 85 86 87 | 93 94 95
+
+==============================================
+WINDOW @ t=1395000
+row=3 col=7
+---- I WINDOW ----
+13 14 15
+21 22 23
+29 30 31
+---- Q WINDOW ----
+77 78 79
+85 86 87
+93 94 95
+==============================================
+RAW_CONV ch=1 row=3 col=6 y=-56
+RAW_CONV ch=2 row=3 col=6 y=8
+RAW_CONV ch=3 row=3 col=6 y=120
+RAW_CONV ch=0 row=3 col=6 y=21
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=0 in_pixel=32
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=0 in_pixel=96
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=1 in_pixel=33
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=1 in_pixel=97
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=2 in_pixel=34
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=2
+  TOP  = 16 17 18
+  MID  = 24 25 26
+  BOT  = 32 33 34
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=2  w=16 17 18 | 24 25 26 | 32 33 34
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=2 in_pixel=98
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=2
+  TOP  = 80 81 82
+  MID  = 88 89 90
+  BOT  = 96 97 98
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=2  w=80 81 82 | 88 89 90 | 96 97 98
+
+==============================================
+WINDOW @ t=1635000
+row=4 col=2
+---- I WINDOW ----
+16 17 18
+24 25 26
+32 33 34
+---- Q WINDOW ----
+80 81 82
+88 89 90
+96 97 98
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=3 in_pixel=35
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=3
+  TOP  = 17 18 19
+  MID  = 25 26 27
+  BOT  = 33 34 35
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=3  w=17 18 19 | 25 26 27 | 33 34 35
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=3 in_pixel=99
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=3
+  TOP  = 81 82 83
+  MID  = 89 90 91
+  BOT  = 97 98 99
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=3  w=81 82 83 | 89 90 91 | 97 98 99
+
+==============================================
+WINDOW @ t=1645000
+row=4 col=3
+---- I WINDOW ----
+17 18 19
+25 26 27
+33 34 35
+---- Q WINDOW ----
+81 82 83
+89 90 91
+97 98 99
+==============================================
+RAW_CONV ch=1 row=4 col=2 y=-56
+RAW_CONV ch=2 row=4 col=2 y=8
+RAW_CONV ch=3 row=4 col=2 y=128
+RAW_CONV ch=0 row=4 col=2 y=25
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=4 in_pixel=36
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=4
+  TOP  = 18 19 20
+  MID  = 26 27 28
+  BOT  = 34 35 36
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=4  w=18 19 20 | 26 27 28 | 34 35 36
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=4 in_pixel=100
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=4
+  TOP  = 82 83 84
+  MID  = 90 91 92
+  BOT  = 98 99 100
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=4  w=82 83 84 | 90 91 92 | 98 99 100
+
+==============================================
+WINDOW @ t=1865000
+row=4 col=4
+---- I WINDOW ----
+18 19 20
+26 27 28
+34 35 36
+---- Q WINDOW ----
+82 83 84
+90 91 92
+98 99 100
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=5 in_pixel=37
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=5
+  TOP  = 19 20 21
+  MID  = 27 28 29
+  BOT  = 35 36 37
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=5  w=19 20 21 | 27 28 29 | 35 36 37
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=5 in_pixel=101
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=5
+  TOP  = 83 84 85
+  MID  = 91 92 93
+  BOT  = 99 100 101
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=5  w=83 84 85 | 91 92 93 | 99 100 101
+
+==============================================
+WINDOW @ t=1875000
+row=4 col=5
+---- I WINDOW ----
+19 20 21
+27 28 29
+35 36 37
+---- Q WINDOW ----
+83 84 85
+91 92 93
+99 100 101
+==============================================
+RAW_CONV ch=1 row=4 col=4 y=-56
+RAW_CONV ch=2 row=4 col=4 y=8
+RAW_CONV ch=3 row=4 col=4 y=132
+RAW_CONV ch=0 row=4 col=4 y=27
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=6 in_pixel=38
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=6
+  TOP  = 20 21 22
+  MID  = 28 29 30
+  BOT  = 36 37 38
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=6  w=20 21 22 | 28 29 30 | 36 37 38
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=6 in_pixel=102
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=6
+  TOP  = 84 85 86
+  MID  = 92 93 94
+  BOT  = 100 101 102
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=6  w=84 85 86 | 92 93 94 | 100 101 102
+
+==============================================
+WINDOW @ t=2095000
+row=4 col=6
+---- I WINDOW ----
+20 21 22
+28 29 30
+36 37 38
+---- Q WINDOW ----
+84 85 86
+92 93 94
+100 101 102
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=7 in_pixel=39
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=7
+  TOP  = 21 22 23
+  MID  = 29 30 31
+  BOT  = 37 38 39
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=7  w=21 22 23 | 29 30 31 | 37 38 39
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=7 in_pixel=103
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=7
+  TOP  = 85 86 87
+  MID  = 93 94 95
+  BOT  = 101 102 103
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=7  w=85 86 87 | 93 94 95 | 101 102 103
+
+==============================================
+WINDOW @ t=2105000
+row=4 col=7
+---- I WINDOW ----
+21 22 23
+29 30 31
+37 38 39
+---- Q WINDOW ----
+85 86 87
+93 94 95
+101 102 103
+==============================================
+RAW_CONV ch=1 row=4 col=6 y=-56
+RAW_CONV ch=2 row=4 col=6 y=8
+RAW_CONV ch=3 row=4 col=6 y=136
+RAW_CONV ch=0 row=4 col=6 y=29
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=0 in_pixel=40
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=0 in_pixel=104
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=1 in_pixel=41
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=1 in_pixel=105
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=2 in_pixel=42
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=2
+  TOP  = 24 25 26
+  MID  = 32 33 34
+  BOT  = 40 41 42
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=2  w=24 25 26 | 32 33 34 | 40 41 42
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=2 in_pixel=106
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=2
+  TOP  = 88 89 90
+  MID  = 96 97 98
+  BOT  = 104 105 106
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=2  w=88 89 90 | 96 97 98 | 104 105 106
+
+==============================================
+WINDOW @ t=2345000
+row=5 col=2
+---- I WINDOW ----
+24 25 26
+32 33 34
+40 41 42
+---- Q WINDOW ----
+88 89 90
+96 97 98
+104 105 106
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=3 in_pixel=43
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=3
+  TOP  = 25 26 27
+  MID  = 33 34 35
+  BOT  = 41 42 43
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=3  w=25 26 27 | 33 34 35 | 41 42 43
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=3 in_pixel=107
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=3
+  TOP  = 89 90 91
+  MID  = 97 98 99
+  BOT  = 105 106 107
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=3  w=89 90 91 | 97 98 99 | 105 106 107
+
+==============================================
+WINDOW @ t=2355000
+row=5 col=3
+---- I WINDOW ----
+25 26 27
+33 34 35
+41 42 43
+---- Q WINDOW ----
+89 90 91
+97 98 99
+105 106 107
+==============================================
+RAW_CONV ch=1 row=5 col=2 y=-56
+RAW_CONV ch=2 row=5 col=2 y=8
+RAW_CONV ch=3 row=5 col=2 y=144
+RAW_CONV ch=0 row=5 col=2 y=33
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=4 in_pixel=44
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=4
+  TOP  = 26 27 28
+  MID  = 34 35 36
+  BOT  = 42 43 44
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=4  w=26 27 28 | 34 35 36 | 42 43 44
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=4 in_pixel=108
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=4
+  TOP  = 90 91 92
+  MID  = 98 99 100
+  BOT  = 106 107 108
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=4  w=90 91 92 | 98 99 100 | 106 107 108
+
+==============================================
+WINDOW @ t=2575000
+row=5 col=4
+---- I WINDOW ----
+26 27 28
+34 35 36
+42 43 44
+---- Q WINDOW ----
+90 91 92
+98 99 100
+106 107 108
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=5 in_pixel=45
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=5
+  TOP  = 27 28 29
+  MID  = 35 36 37
+  BOT  = 43 44 45
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=5  w=27 28 29 | 35 36 37 | 43 44 45
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=5 in_pixel=109
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=5
+  TOP  = 91 92 93
+  MID  = 99 100 101
+  BOT  = 107 108 109
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=5  w=91 92 93 | 99 100 101 | 107 108 109
+
+==============================================
+WINDOW @ t=2585000
+row=5 col=5
+---- I WINDOW ----
+27 28 29
+35 36 37
+43 44 45
+---- Q WINDOW ----
+91 92 93
+99 100 101
+107 108 109
+==============================================
+RAW_CONV ch=1 row=5 col=4 y=-56
+RAW_CONV ch=2 row=5 col=4 y=8
+RAW_CONV ch=3 row=5 col=4 y=148
+RAW_CONV ch=0 row=5 col=4 y=35
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=6 in_pixel=46
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=6
+  TOP  = 28 29 30
+  MID  = 36 37 38
+  BOT  = 44 45 46
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=6  w=28 29 30 | 36 37 38 | 44 45 46
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=6 in_pixel=110
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=6
+  TOP  = 92 93 94
+  MID  = 100 101 102
+  BOT  = 108 109 110
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=6  w=92 93 94 | 100 101 102 | 108 109 110
+
+==============================================
+WINDOW @ t=2805000
+row=5 col=6
+---- I WINDOW ----
+28 29 30
+36 37 38
+44 45 46
+---- Q WINDOW ----
+92 93 94
+100 101 102
+108 109 110
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=7 in_pixel=47
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=7
+  TOP  = 29 30 31
+  MID  = 37 38 39
+  BOT  = 45 46 47
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=7  w=29 30 31 | 37 38 39 | 45 46 47
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=7 in_pixel=111
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=7
+  TOP  = 93 94 95
+  MID  = 101 102 103
+  BOT  = 109 110 111
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=7  w=93 94 95 | 101 102 103 | 109 110 111
+
+==============================================
+WINDOW @ t=2815000
+row=5 col=7
+---- I WINDOW ----
+29 30 31
+37 38 39
+45 46 47
+---- Q WINDOW ----
+93 94 95
+101 102 103
+109 110 111
+==============================================
+RAW_CONV ch=1 row=5 col=6 y=-56
+RAW_CONV ch=2 row=5 col=6 y=8
+RAW_CONV ch=3 row=5 col=6 y=152
+RAW_CONV ch=0 row=5 col=6 y=37
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=0 in_pixel=48
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=0 in_pixel=112
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=1 in_pixel=49
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=1 in_pixel=113
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=2 in_pixel=50
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=2
+  TOP  = 32 33 34
+  MID  = 40 41 42
+  BOT  = 48 49 50
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=2  w=32 33 34 | 40 41 42 | 48 49 50
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=2 in_pixel=114
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=2
+  TOP  = 96 97 98
+  MID  = 104 105 106
+  BOT  = 112 113 114
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=2  w=96 97 98 | 104 105 106 | 112 113 114
+
+==============================================
+WINDOW @ t=3055000
+row=6 col=2
+---- I WINDOW ----
+32 33 34
+40 41 42
+48 49 50
+---- Q WINDOW ----
+96 97 98
+104 105 106
+112 113 114
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=3 in_pixel=51
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=3
+  TOP  = 33 34 35
+  MID  = 41 42 43
+  BOT  = 49 50 51
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=3  w=33 34 35 | 41 42 43 | 49 50 51
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=3 in_pixel=115
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=3
+  TOP  = 97 98 99
+  MID  = 105 106 107
+  BOT  = 113 114 115
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=3  w=97 98 99 | 105 106 107 | 113 114 115
+
+==============================================
+WINDOW @ t=3065000
+row=6 col=3
+---- I WINDOW ----
+33 34 35
+41 42 43
+49 50 51
+---- Q WINDOW ----
+97 98 99
+105 106 107
+113 114 115
+==============================================
+RAW_CONV ch=1 row=6 col=2 y=-56
+RAW_CONV ch=2 row=6 col=2 y=8
+RAW_CONV ch=3 row=6 col=2 y=160
+RAW_CONV ch=0 row=6 col=2 y=41
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=4 in_pixel=52
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=4
+  TOP  = 34 35 36
+  MID  = 42 43 44
+  BOT  = 50 51 52
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=4  w=34 35 36 | 42 43 44 | 50 51 52
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=4 in_pixel=116
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=4
+  TOP  = 98 99 100
+  MID  = 106 107 108
+  BOT  = 114 115 116
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=4  w=98 99 100 | 106 107 108 | 114 115 116
+
+==============================================
+WINDOW @ t=3285000
+row=6 col=4
+---- I WINDOW ----
+34 35 36
+42 43 44
+50 51 52
+---- Q WINDOW ----
+98 99 100
+106 107 108
+114 115 116
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=5 in_pixel=53
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=5
+  TOP  = 35 36 37
+  MID  = 43 44 45
+  BOT  = 51 52 53
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=5  w=35 36 37 | 43 44 45 | 51 52 53
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=5 in_pixel=117
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=5
+  TOP  = 99 100 101
+  MID  = 107 108 109
+  BOT  = 115 116 117
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=5  w=99 100 101 | 107 108 109 | 115 116 117
+
+==============================================
+WINDOW @ t=3295000
+row=6 col=5
+---- I WINDOW ----
+35 36 37
+43 44 45
+51 52 53
+---- Q WINDOW ----
+99 100 101
+107 108 109
+115 116 117
+==============================================
+RAW_CONV ch=1 row=6 col=4 y=-56
+RAW_CONV ch=2 row=6 col=4 y=8
+RAW_CONV ch=3 row=6 col=4 y=164
+RAW_CONV ch=0 row=6 col=4 y=43
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=6 in_pixel=54
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=6
+  TOP  = 36 37 38
+  MID  = 44 45 46
+  BOT  = 52 53 54
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=6  w=36 37 38 | 44 45 46 | 52 53 54
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=6 in_pixel=118
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=6
+  TOP  = 100 101 102
+  MID  = 108 109 110
+  BOT  = 116 117 118
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=6  w=100 101 102 | 108 109 110 | 116 117 118
+
+==============================================
+WINDOW @ t=3515000
+row=6 col=6
+---- I WINDOW ----
+36 37 38
+44 45 46
+52 53 54
+---- Q WINDOW ----
+100 101 102
+108 109 110
+116 117 118
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=7 in_pixel=55
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=7
+  TOP  = 37 38 39
+  MID  = 45 46 47
+  BOT  = 53 54 55
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=7  w=37 38 39 | 45 46 47 | 53 54 55
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=7 in_pixel=119
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=7
+  TOP  = 101 102 103
+  MID  = 109 110 111
+  BOT  = 117 118 119
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=7  w=101 102 103 | 109 110 111 | 117 118 119
+
+==============================================
+WINDOW @ t=3525000
+row=6 col=7
+---- I WINDOW ----
+37 38 39
+45 46 47
+53 54 55
+---- Q WINDOW ----
+101 102 103
+109 110 111
+117 118 119
+==============================================
+RAW_CONV ch=1 row=6 col=6 y=-56
+RAW_CONV ch=2 row=6 col=6 y=8
+RAW_CONV ch=3 row=6 col=6 y=168
+RAW_CONV ch=0 row=6 col=6 y=45
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=0 in_pixel=56
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=0 in_pixel=120
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=1 in_pixel=57
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=1 in_pixel=121
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=2 in_pixel=58
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=2
+  TOP  = 40 41 42
+  MID  = 48 49 50
+  BOT  = 56 57 58
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=2  w=40 41 42 | 48 49 50 | 56 57 58
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=2 in_pixel=122
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=2
+  TOP  = 104 105 106
+  MID  = 112 113 114
+  BOT  = 120 121 122
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=2  w=104 105 106 | 112 113 114 | 120 121 122
+
+==============================================
+WINDOW @ t=3765000
+row=7 col=2
+---- I WINDOW ----
+40 41 42
+48 49 50
+56 57 58
+---- Q WINDOW ----
+104 105 106
+112 113 114
+120 121 122
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=3 in_pixel=59
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=3
+  TOP  = 41 42 43
+  MID  = 49 50 51
+  BOT  = 57 58 59
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=3  w=41 42 43 | 49 50 51 | 57 58 59
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=3 in_pixel=123
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=3
+  TOP  = 105 106 107
+  MID  = 113 114 115
+  BOT  = 121 122 123
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=3  w=105 106 107 | 113 114 115 | 121 122 123
+
+==============================================
+WINDOW @ t=3775000
+row=7 col=3
+---- I WINDOW ----
+41 42 43
+49 50 51
+57 58 59
+---- Q WINDOW ----
+105 106 107
+113 114 115
+121 122 123
+==============================================
+RAW_CONV ch=1 row=7 col=2 y=-56
+RAW_CONV ch=2 row=7 col=2 y=8
+RAW_CONV ch=3 row=7 col=2 y=176
+RAW_CONV ch=0 row=7 col=2 y=49
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=4 in_pixel=60
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=4
+  TOP  = 42 43 44
+  MID  = 50 51 52
+  BOT  = 58 59 60
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=4  w=42 43 44 | 50 51 52 | 58 59 60
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=4 in_pixel=124
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=4
+  TOP  = 106 107 108
+  MID  = 114 115 116
+  BOT  = 122 123 124
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=4  w=106 107 108 | 114 115 116 | 122 123 124
+
+==============================================
+WINDOW @ t=3995000
+row=7 col=4
+---- I WINDOW ----
+42 43 44
+50 51 52
+58 59 60
+---- Q WINDOW ----
+106 107 108
+114 115 116
+122 123 124
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=5 in_pixel=61
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=5
+  TOP  = 43 44 45
+  MID  = 51 52 53
+  BOT  = 59 60 61
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=5  w=43 44 45 | 51 52 53 | 59 60 61
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=5 in_pixel=125
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=5
+  TOP  = 107 108 109
+  MID  = 115 116 117
+  BOT  = 123 124 125
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=5  w=107 108 109 | 115 116 117 | 123 124 125
+
+==============================================
+WINDOW @ t=4005000
+row=7 col=5
+---- I WINDOW ----
+43 44 45
+51 52 53
+59 60 61
+---- Q WINDOW ----
+107 108 109
+115 116 117
+123 124 125
+==============================================
+RAW_CONV ch=1 row=7 col=4 y=-56
+RAW_CONV ch=2 row=7 col=4 y=8
+RAW_CONV ch=3 row=7 col=4 y=180
+RAW_CONV ch=0 row=7 col=4 y=51
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=6 in_pixel=62
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=6
+  TOP  = 44 45 46
+  MID  = 52 53 54
+  BOT  = 60 61 62
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=6  w=44 45 46 | 52 53 54 | 60 61 62
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=6 in_pixel=126
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=6
+  TOP  = 108 109 110
+  MID  = 116 117 118
+  BOT  = 124 125 126
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=6  w=108 109 110 | 116 117 118 | 124 125 126
+
+==============================================
+WINDOW @ t=4225000
+row=7 col=6
+---- I WINDOW ----
+44 45 46
+52 53 54
+60 61 62
+---- Q WINDOW ----
+108 109 110
+116 117 118
+124 125 126
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=7 in_pixel=63
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=7
+  TOP  = 45 46 47
+  MID  = 53 54 55
+  BOT  = 61 62 63
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=7  w=45 46 47 | 53 54 55 | 61 62 63
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=7 in_pixel=127
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=7
+  TOP  = 109 110 111
+  MID  = 117 118 119
+  BOT  = 125 126 127
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=7  w=109 110 111 | 117 118 119 | 125 126 127
+
+==============================================
+WINDOW @ t=4235000
+row=7 col=7
+---- I WINDOW ----
+45 46 47
+53 54 55
+61 62 63
+---- Q WINDOW ----
+109 110 111
+117 118 119
+125 126 127
+==============================================
+RAW_CONV ch=1 row=7 col=6 y=-56
+RAW_CONV ch=2 row=7 col=6 y=8
+RAW_CONV ch=3 row=7 col=6 y=184
+RAW_CONV ch=0 row=7 col=6 y=53
+
+==============================================
+Finished driving inputs
+==============================================
+
+==============================================
+Starting input stream
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=0 in_pixel=0
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=0 in_pixel=64
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=1 in_pixel=1
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=1 in_pixel=65
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=2 in_pixel=2
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=2 in_pixel=66
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=3 in_pixel=3
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=3 in_pixel=67
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=4 in_pixel=4
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=4 in_pixel=68
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=5 in_pixel=5
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=5 in_pixel=69
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=6 in_pixel=6
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=6 in_pixel=70
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=0 col=7 in_pixel=7
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=0 col=7 in_pixel=71
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=0 in_pixel=8
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=0 in_pixel=72
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=1 in_pixel=9
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=1 in_pixel=73
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=2 in_pixel=10
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=2 in_pixel=74
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=3 in_pixel=11
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=3 in_pixel=75
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=4 in_pixel=12
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=4 in_pixel=76
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=5 in_pixel=13
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=5 in_pixel=77
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=6 in_pixel=14
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=6 in_pixel=78
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=1 col=7 in_pixel=15
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=1 col=7 in_pixel=79
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=0 in_pixel=16
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=0 in_pixel=80
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=1 in_pixel=17
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=1 in_pixel=81
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=2 in_pixel=18
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=2
+  TOP  = 0 1 2
+  MID  = 8 9 10
+  BOT  = 16 17 18
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=2  w=0 1 2 | 8 9 10 | 16 17 18
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=2 in_pixel=82
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=2
+  TOP  = 64 65 66
+  MID  = 72 73 74
+  BOT  = 80 81 82
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=2  w=64 65 66 | 72 73 74 | 80 81 82
+
+==============================================
+WINDOW @ t=215000
+row=2 col=2
+---- I WINDOW ----
+0 1 2
+8 9 10
+16 17 18
+---- Q WINDOW ----
+64 65 66
+72 73 74
+80 81 82
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=3 in_pixel=19
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=3
+  TOP  = 1 2 3
+  MID  = 9 10 11
+  BOT  = 17 18 19
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=3  w=1 2 3 | 9 10 11 | 17 18 19
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=3 in_pixel=83
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=3
+  TOP  = 65 66 67
+  MID  = 73 74 75
+  BOT  = 81 82 83
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=3  w=65 66 67 | 73 74 75 | 81 82 83
+
+==============================================
+WINDOW @ t=225000
+row=2 col=3
+---- I WINDOW ----
+1 2 3
+9 10 11
+17 18 19
+---- Q WINDOW ----
+65 66 67
+73 74 75
+81 82 83
+==============================================
+RAW_CONV ch=1 row=2 col=2 y=-56
+RAW_CONV ch=2 row=2 col=2 y=8
+RAW_CONV ch=3 row=2 col=2 y=96
+RAW_CONV ch=0 row=2 col=2 y=9
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=4 in_pixel=20
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=4
+  TOP  = 2 3 4
+  MID  = 10 11 12
+  BOT  = 18 19 20
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=4  w=2 3 4 | 10 11 12 | 18 19 20
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=4 in_pixel=84
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=4
+  TOP  = 66 67 68
+  MID  = 74 75 76
+  BOT  = 82 83 84
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=4  w=66 67 68 | 74 75 76 | 82 83 84
+
+==============================================
+WINDOW @ t=445000
+row=2 col=4
+---- I WINDOW ----
+2 3 4
+10 11 12
+18 19 20
+---- Q WINDOW ----
+66 67 68
+74 75 76
+82 83 84
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=5 in_pixel=21
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=5
+  TOP  = 3 4 5
+  MID  = 11 12 13
+  BOT  = 19 20 21
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=5  w=3 4 5 | 11 12 13 | 19 20 21
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=5 in_pixel=85
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=5
+  TOP  = 67 68 69
+  MID  = 75 76 77
+  BOT  = 83 84 85
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=5  w=67 68 69 | 75 76 77 | 83 84 85
+
+==============================================
+WINDOW @ t=455000
+row=2 col=5
+---- I WINDOW ----
+3 4 5
+11 12 13
+19 20 21
+---- Q WINDOW ----
+67 68 69
+75 76 77
+83 84 85
+==============================================
+RAW_CONV ch=1 row=2 col=4 y=-56
+RAW_CONV ch=2 row=2 col=4 y=8
+RAW_CONV ch=3 row=2 col=4 y=100
+RAW_CONV ch=0 row=2 col=4 y=11
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=6 in_pixel=22
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=6
+  TOP  = 4 5 6
+  MID  = 12 13 14
+  BOT  = 20 21 22
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=6  w=4 5 6 | 12 13 14 | 20 21 22
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=6 in_pixel=86
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=6
+  TOP  = 68 69 70
+  MID  = 76 77 78
+  BOT  = 84 85 86
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=6  w=68 69 70 | 76 77 78 | 84 85 86
+
+==============================================
+WINDOW @ t=675000
+row=2 col=6
+---- I WINDOW ----
+4 5 6
+12 13 14
+20 21 22
+---- Q WINDOW ----
+68 69 70
+76 77 78
+84 85 86
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=2 col=7 in_pixel=23
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=2 col=7
+  TOP  = 5 6 7
+  MID  = 13 14 15
+  BOT  = 21 22 23
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=2 col=7  w=5 6 7 | 13 14 15 | 21 22 23
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=2 col=7 in_pixel=87
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=2 col=7
+  TOP  = 69 70 71
+  MID  = 77 78 79
+  BOT  = 85 86 87
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=2 col=7  w=69 70 71 | 77 78 79 | 85 86 87
+
+==============================================
+WINDOW @ t=685000
+row=2 col=7
+---- I WINDOW ----
+5 6 7
+13 14 15
+21 22 23
+---- Q WINDOW ----
+69 70 71
+77 78 79
+85 86 87
+==============================================
+RAW_CONV ch=1 row=2 col=6 y=-56
+RAW_CONV ch=2 row=2 col=6 y=8
+RAW_CONV ch=3 row=2 col=6 y=104
+RAW_CONV ch=0 row=2 col=6 y=13
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=0 in_pixel=24
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=0 in_pixel=88
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=1 in_pixel=25
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=1 in_pixel=89
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=2 in_pixel=26
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=2
+  TOP  = 8 9 10
+  MID  = 16 17 18
+  BOT  = 24 25 26
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=2  w=8 9 10 | 16 17 18 | 24 25 26
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=2 in_pixel=90
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=2
+  TOP  = 72 73 74
+  MID  = 80 81 82
+  BOT  = 88 89 90
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=2  w=72 73 74 | 80 81 82 | 88 89 90
+
+==============================================
+WINDOW @ t=925000
+row=3 col=2
+---- I WINDOW ----
+8 9 10
+16 17 18
+24 25 26
+---- Q WINDOW ----
+72 73 74
+80 81 82
+88 89 90
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=3 in_pixel=27
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=3
+  TOP  = 9 10 11
+  MID  = 17 18 19
+  BOT  = 25 26 27
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=3  w=9 10 11 | 17 18 19 | 25 26 27
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=3 in_pixel=91
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=3
+  TOP  = 73 74 75
+  MID  = 81 82 83
+  BOT  = 89 90 91
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=3  w=73 74 75 | 81 82 83 | 89 90 91
+
+==============================================
+WINDOW @ t=935000
+row=3 col=3
+---- I WINDOW ----
+9 10 11
+17 18 19
+25 26 27
+---- Q WINDOW ----
+73 74 75
+81 82 83
+89 90 91
+==============================================
+RAW_CONV ch=1 row=3 col=2 y=-56
+RAW_CONV ch=2 row=3 col=2 y=8
+RAW_CONV ch=3 row=3 col=2 y=112
+RAW_CONV ch=0 row=3 col=2 y=17
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=4 in_pixel=28
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=4
+  TOP  = 10 11 12
+  MID  = 18 19 20
+  BOT  = 26 27 28
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=4  w=10 11 12 | 18 19 20 | 26 27 28
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=4 in_pixel=92
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=4
+  TOP  = 74 75 76
+  MID  = 82 83 84
+  BOT  = 90 91 92
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=4  w=74 75 76 | 82 83 84 | 90 91 92
+
+==============================================
+WINDOW @ t=1155000
+row=3 col=4
+---- I WINDOW ----
+10 11 12
+18 19 20
+26 27 28
+---- Q WINDOW ----
+74 75 76
+82 83 84
+90 91 92
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=5 in_pixel=29
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=5
+  TOP  = 11 12 13
+  MID  = 19 20 21
+  BOT  = 27 28 29
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=5  w=11 12 13 | 19 20 21 | 27 28 29
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=5 in_pixel=93
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=5
+  TOP  = 75 76 77
+  MID  = 83 84 85
+  BOT  = 91 92 93
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=5  w=75 76 77 | 83 84 85 | 91 92 93
+
+==============================================
+WINDOW @ t=1165000
+row=3 col=5
+---- I WINDOW ----
+11 12 13
+19 20 21
+27 28 29
+---- Q WINDOW ----
+75 76 77
+83 84 85
+91 92 93
+==============================================
+RAW_CONV ch=1 row=3 col=4 y=-56
+RAW_CONV ch=2 row=3 col=4 y=8
+RAW_CONV ch=3 row=3 col=4 y=116
+RAW_CONV ch=0 row=3 col=4 y=19
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=6 in_pixel=30
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=6
+  TOP  = 12 13 14
+  MID  = 20 21 22
+  BOT  = 28 29 30
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=6  w=12 13 14 | 20 21 22 | 28 29 30
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=6 in_pixel=94
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=6
+  TOP  = 76 77 78
+  MID  = 84 85 86
+  BOT  = 92 93 94
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=6  w=76 77 78 | 84 85 86 | 92 93 94
+
+==============================================
+WINDOW @ t=1385000
+row=3 col=6
+---- I WINDOW ----
+12 13 14
+20 21 22
+28 29 30
+---- Q WINDOW ----
+76 77 78
+84 85 86
+92 93 94
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=3 col=7 in_pixel=31
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=3 col=7
+  TOP  = 13 14 15
+  MID  = 21 22 23
+  BOT  = 29 30 31
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=3 col=7  w=13 14 15 | 21 22 23 | 29 30 31
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=3 col=7 in_pixel=95
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=3 col=7
+  TOP  = 77 78 79
+  MID  = 85 86 87
+  BOT  = 93 94 95
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=3 col=7  w=77 78 79 | 85 86 87 | 93 94 95
+
+==============================================
+WINDOW @ t=1395000
+row=3 col=7
+---- I WINDOW ----
+13 14 15
+21 22 23
+29 30 31
+---- Q WINDOW ----
+77 78 79
+85 86 87
+93 94 95
+==============================================
+RAW_CONV ch=1 row=3 col=6 y=-56
+RAW_CONV ch=2 row=3 col=6 y=8
+RAW_CONV ch=3 row=3 col=6 y=120
+RAW_CONV ch=0 row=3 col=6 y=21
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=0 in_pixel=32
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=0 in_pixel=96
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=1 in_pixel=33
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=1 in_pixel=97
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=2 in_pixel=34
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=2
+  TOP  = 16 17 18
+  MID  = 24 25 26
+  BOT  = 32 33 34
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=2  w=16 17 18 | 24 25 26 | 32 33 34
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=2 in_pixel=98
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=2
+  TOP  = 80 81 82
+  MID  = 88 89 90
+  BOT  = 96 97 98
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=2  w=80 81 82 | 88 89 90 | 96 97 98
+
+==============================================
+WINDOW @ t=1635000
+row=4 col=2
+---- I WINDOW ----
+16 17 18
+24 25 26
+32 33 34
+---- Q WINDOW ----
+80 81 82
+88 89 90
+96 97 98
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=3 in_pixel=35
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=3
+  TOP  = 17 18 19
+  MID  = 25 26 27
+  BOT  = 33 34 35
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=3  w=17 18 19 | 25 26 27 | 33 34 35
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=3 in_pixel=99
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=3
+  TOP  = 81 82 83
+  MID  = 89 90 91
+  BOT  = 97 98 99
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=3  w=81 82 83 | 89 90 91 | 97 98 99
+
+==============================================
+WINDOW @ t=1645000
+row=4 col=3
+---- I WINDOW ----
+17 18 19
+25 26 27
+33 34 35
+---- Q WINDOW ----
+81 82 83
+89 90 91
+97 98 99
+==============================================
+RAW_CONV ch=1 row=4 col=2 y=-56
+RAW_CONV ch=2 row=4 col=2 y=8
+RAW_CONV ch=3 row=4 col=2 y=128
+RAW_CONV ch=0 row=4 col=2 y=25
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=4 in_pixel=36
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=4
+  TOP  = 18 19 20
+  MID  = 26 27 28
+  BOT  = 34 35 36
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=4  w=18 19 20 | 26 27 28 | 34 35 36
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=4 in_pixel=100
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=4
+  TOP  = 82 83 84
+  MID  = 90 91 92
+  BOT  = 98 99 100
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=4  w=82 83 84 | 90 91 92 | 98 99 100
+
+==============================================
+WINDOW @ t=1865000
+row=4 col=4
+---- I WINDOW ----
+18 19 20
+26 27 28
+34 35 36
+---- Q WINDOW ----
+82 83 84
+90 91 92
+98 99 100
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=5 in_pixel=37
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=5
+  TOP  = 19 20 21
+  MID  = 27 28 29
+  BOT  = 35 36 37
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=5  w=19 20 21 | 27 28 29 | 35 36 37
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=5 in_pixel=101
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=5
+  TOP  = 83 84 85
+  MID  = 91 92 93
+  BOT  = 99 100 101
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=5  w=83 84 85 | 91 92 93 | 99 100 101
+
+==============================================
+WINDOW @ t=1875000
+row=4 col=5
+---- I WINDOW ----
+19 20 21
+27 28 29
+35 36 37
+---- Q WINDOW ----
+83 84 85
+91 92 93
+99 100 101
+==============================================
+RAW_CONV ch=1 row=4 col=4 y=-56
+RAW_CONV ch=2 row=4 col=4 y=8
+RAW_CONV ch=3 row=4 col=4 y=132
+RAW_CONV ch=0 row=4 col=4 y=27
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=6 in_pixel=38
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=6
+  TOP  = 20 21 22
+  MID  = 28 29 30
+  BOT  = 36 37 38
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=6  w=20 21 22 | 28 29 30 | 36 37 38
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=6 in_pixel=102
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=6
+  TOP  = 84 85 86
+  MID  = 92 93 94
+  BOT  = 100 101 102
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=6  w=84 85 86 | 92 93 94 | 100 101 102
+
+==============================================
+WINDOW @ t=2095000
+row=4 col=6
+---- I WINDOW ----
+20 21 22
+28 29 30
+36 37 38
+---- Q WINDOW ----
+84 85 86
+92 93 94
+100 101 102
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=4 col=7 in_pixel=39
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=4 col=7
+  TOP  = 21 22 23
+  MID  = 29 30 31
+  BOT  = 37 38 39
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=4 col=7  w=21 22 23 | 29 30 31 | 37 38 39
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=4 col=7 in_pixel=103
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=4 col=7
+  TOP  = 85 86 87
+  MID  = 93 94 95
+  BOT  = 101 102 103
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=4 col=7  w=85 86 87 | 93 94 95 | 101 102 103
+
+==============================================
+WINDOW @ t=2105000
+row=4 col=7
+---- I WINDOW ----
+21 22 23
+29 30 31
+37 38 39
+---- Q WINDOW ----
+85 86 87
+93 94 95
+101 102 103
+==============================================
+RAW_CONV ch=1 row=4 col=6 y=-56
+RAW_CONV ch=2 row=4 col=6 y=8
+RAW_CONV ch=3 row=4 col=6 y=136
+RAW_CONV ch=0 row=4 col=6 y=29
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=0 in_pixel=40
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=0 in_pixel=104
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=1 in_pixel=41
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=1 in_pixel=105
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=2 in_pixel=42
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=2
+  TOP  = 24 25 26
+  MID  = 32 33 34
+  BOT  = 40 41 42
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=2  w=24 25 26 | 32 33 34 | 40 41 42
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=2 in_pixel=106
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=2
+  TOP  = 88 89 90
+  MID  = 96 97 98
+  BOT  = 104 105 106
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=2  w=88 89 90 | 96 97 98 | 104 105 106
+
+==============================================
+WINDOW @ t=2345000
+row=5 col=2
+---- I WINDOW ----
+24 25 26
+32 33 34
+40 41 42
+---- Q WINDOW ----
+88 89 90
+96 97 98
+104 105 106
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=3 in_pixel=43
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=3
+  TOP  = 25 26 27
+  MID  = 33 34 35
+  BOT  = 41 42 43
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=3  w=25 26 27 | 33 34 35 | 41 42 43
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=3 in_pixel=107
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=3
+  TOP  = 89 90 91
+  MID  = 97 98 99
+  BOT  = 105 106 107
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=3  w=89 90 91 | 97 98 99 | 105 106 107
+
+==============================================
+WINDOW @ t=2355000
+row=5 col=3
+---- I WINDOW ----
+25 26 27
+33 34 35
+41 42 43
+---- Q WINDOW ----
+89 90 91
+97 98 99
+105 106 107
+==============================================
+RAW_CONV ch=1 row=5 col=2 y=-56
+RAW_CONV ch=2 row=5 col=2 y=8
+RAW_CONV ch=3 row=5 col=2 y=144
+RAW_CONV ch=0 row=5 col=2 y=33
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=4 in_pixel=44
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=4
+  TOP  = 26 27 28
+  MID  = 34 35 36
+  BOT  = 42 43 44
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=4  w=26 27 28 | 34 35 36 | 42 43 44
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=4 in_pixel=108
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=4
+  TOP  = 90 91 92
+  MID  = 98 99 100
+  BOT  = 106 107 108
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=4  w=90 91 92 | 98 99 100 | 106 107 108
+
+==============================================
+WINDOW @ t=2575000
+row=5 col=4
+---- I WINDOW ----
+26 27 28
+34 35 36
+42 43 44
+---- Q WINDOW ----
+90 91 92
+98 99 100
+106 107 108
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=5 in_pixel=45
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=5
+  TOP  = 27 28 29
+  MID  = 35 36 37
+  BOT  = 43 44 45
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=5  w=27 28 29 | 35 36 37 | 43 44 45
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=5 in_pixel=109
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=5
+  TOP  = 91 92 93
+  MID  = 99 100 101
+  BOT  = 107 108 109
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=5  w=91 92 93 | 99 100 101 | 107 108 109
+
+==============================================
+WINDOW @ t=2585000
+row=5 col=5
+---- I WINDOW ----
+27 28 29
+35 36 37
+43 44 45
+---- Q WINDOW ----
+91 92 93
+99 100 101
+107 108 109
+==============================================
+RAW_CONV ch=1 row=5 col=4 y=-56
+RAW_CONV ch=2 row=5 col=4 y=8
+RAW_CONV ch=3 row=5 col=4 y=148
+RAW_CONV ch=0 row=5 col=4 y=35
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=6 in_pixel=46
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=6
+  TOP  = 28 29 30
+  MID  = 36 37 38
+  BOT  = 44 45 46
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=6  w=28 29 30 | 36 37 38 | 44 45 46
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=6 in_pixel=110
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=6
+  TOP  = 92 93 94
+  MID  = 100 101 102
+  BOT  = 108 109 110
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=6  w=92 93 94 | 100 101 102 | 108 109 110
+
+==============================================
+WINDOW @ t=2805000
+row=5 col=6
+---- I WINDOW ----
+28 29 30
+36 37 38
+44 45 46
+---- Q WINDOW ----
+92 93 94
+100 101 102
+108 109 110
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=5 col=7 in_pixel=47
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=5 col=7
+  TOP  = 29 30 31
+  MID  = 37 38 39
+  BOT  = 45 46 47
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=5 col=7  w=29 30 31 | 37 38 39 | 45 46 47
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=5 col=7 in_pixel=111
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=5 col=7
+  TOP  = 93 94 95
+  MID  = 101 102 103
+  BOT  = 109 110 111
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=5 col=7  w=93 94 95 | 101 102 103 | 109 110 111
+
+==============================================
+WINDOW @ t=2815000
+row=5 col=7
+---- I WINDOW ----
+29 30 31
+37 38 39
+45 46 47
+---- Q WINDOW ----
+93 94 95
+101 102 103
+109 110 111
+==============================================
+RAW_CONV ch=1 row=5 col=6 y=-56
+RAW_CONV ch=2 row=5 col=6 y=8
+RAW_CONV ch=3 row=5 col=6 y=152
+RAW_CONV ch=0 row=5 col=6 y=37
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=0 in_pixel=48
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=0 in_pixel=112
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=1 in_pixel=49
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=1 in_pixel=113
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=2 in_pixel=50
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=2
+  TOP  = 32 33 34
+  MID  = 40 41 42
+  BOT  = 48 49 50
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=2  w=32 33 34 | 40 41 42 | 48 49 50
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=2 in_pixel=114
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=2
+  TOP  = 96 97 98
+  MID  = 104 105 106
+  BOT  = 112 113 114
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=2  w=96 97 98 | 104 105 106 | 112 113 114
+
+==============================================
+WINDOW @ t=3055000
+row=6 col=2
+---- I WINDOW ----
+32 33 34
+40 41 42
+48 49 50
+---- Q WINDOW ----
+96 97 98
+104 105 106
+112 113 114
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=3 in_pixel=51
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=3
+  TOP  = 33 34 35
+  MID  = 41 42 43
+  BOT  = 49 50 51
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=3  w=33 34 35 | 41 42 43 | 49 50 51
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=3 in_pixel=115
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=3
+  TOP  = 97 98 99
+  MID  = 105 106 107
+  BOT  = 113 114 115
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=3  w=97 98 99 | 105 106 107 | 113 114 115
+
+==============================================
+WINDOW @ t=3065000
+row=6 col=3
+---- I WINDOW ----
+33 34 35
+41 42 43
+49 50 51
+---- Q WINDOW ----
+97 98 99
+105 106 107
+113 114 115
+==============================================
+RAW_CONV ch=1 row=6 col=2 y=-56
+RAW_CONV ch=2 row=6 col=2 y=8
+RAW_CONV ch=3 row=6 col=2 y=160
+RAW_CONV ch=0 row=6 col=2 y=41
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=4 in_pixel=52
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=4
+  TOP  = 34 35 36
+  MID  = 42 43 44
+  BOT  = 50 51 52
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=4  w=34 35 36 | 42 43 44 | 50 51 52
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=4 in_pixel=116
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=4
+  TOP  = 98 99 100
+  MID  = 106 107 108
+  BOT  = 114 115 116
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=4  w=98 99 100 | 106 107 108 | 114 115 116
+
+==============================================
+WINDOW @ t=3285000
+row=6 col=4
+---- I WINDOW ----
+34 35 36
+42 43 44
+50 51 52
+---- Q WINDOW ----
+98 99 100
+106 107 108
+114 115 116
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=5 in_pixel=53
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=5
+  TOP  = 35 36 37
+  MID  = 43 44 45
+  BOT  = 51 52 53
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=5  w=35 36 37 | 43 44 45 | 51 52 53
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=5 in_pixel=117
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=5
+  TOP  = 99 100 101
+  MID  = 107 108 109
+  BOT  = 115 116 117
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=5  w=99 100 101 | 107 108 109 | 115 116 117
+
+==============================================
+WINDOW @ t=3295000
+row=6 col=5
+---- I WINDOW ----
+35 36 37
+43 44 45
+51 52 53
+---- Q WINDOW ----
+99 100 101
+107 108 109
+115 116 117
+==============================================
+RAW_CONV ch=1 row=6 col=4 y=-56
+RAW_CONV ch=2 row=6 col=4 y=8
+RAW_CONV ch=3 row=6 col=4 y=164
+RAW_CONV ch=0 row=6 col=4 y=43
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=6 in_pixel=54
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=6
+  TOP  = 36 37 38
+  MID  = 44 45 46
+  BOT  = 52 53 54
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=6  w=36 37 38 | 44 45 46 | 52 53 54
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=6 in_pixel=118
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=6
+  TOP  = 100 101 102
+  MID  = 108 109 110
+  BOT  = 116 117 118
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=6  w=100 101 102 | 108 109 110 | 116 117 118
+
+==============================================
+WINDOW @ t=3515000
+row=6 col=6
+---- I WINDOW ----
+36 37 38
+44 45 46
+52 53 54
+---- Q WINDOW ----
+100 101 102
+108 109 110
+116 117 118
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=6 col=7 in_pixel=55
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=6 col=7
+  TOP  = 37 38 39
+  MID  = 45 46 47
+  BOT  = 53 54 55
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=6 col=7  w=37 38 39 | 45 46 47 | 53 54 55
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=6 col=7 in_pixel=119
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=6 col=7
+  TOP  = 101 102 103
+  MID  = 109 110 111
+  BOT  = 117 118 119
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=6 col=7  w=101 102 103 | 109 110 111 | 117 118 119
+
+==============================================
+WINDOW @ t=3525000
+row=6 col=7
+---- I WINDOW ----
+37 38 39
+45 46 47
+53 54 55
+---- Q WINDOW ----
+101 102 103
+109 110 111
+117 118 119
+==============================================
+RAW_CONV ch=1 row=6 col=6 y=-56
+RAW_CONV ch=2 row=6 col=6 y=8
+RAW_CONV ch=3 row=6 col=6 y=168
+RAW_CONV ch=0 row=6 col=6 y=45
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=0 in_pixel=56
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=0 in_pixel=120
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=1 in_pixel=57
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=1 in_pixel=121
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=2 in_pixel=58
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=2
+  TOP  = 40 41 42
+  MID  = 48 49 50
+  BOT  = 56 57 58
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=2  w=40 41 42 | 48 49 50 | 56 57 58
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=2 in_pixel=122
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=2
+  TOP  = 104 105 106
+  MID  = 112 113 114
+  BOT  = 120 121 122
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=2  w=104 105 106 | 112 113 114 | 120 121 122
+
+==============================================
+WINDOW @ t=3765000
+row=7 col=2
+---- I WINDOW ----
+40 41 42
+48 49 50
+56 57 58
+---- Q WINDOW ----
+104 105 106
+112 113 114
+120 121 122
+==============================================
+tb_cnn_layer1_iq_top.dut.u_lb_I STATE row=7 col=3 in_pixel=59
+tb_cnn_layer1_iq_top.dut.u_lb_I NEXT_PKT row=7 col=3
+  TOP  = 41 42 43
+  MID  = 49 50 51
+  BOT  = 57 58 59
+tb_cnn_layer1_iq_top.dut.u_lb_I OUT_PKT row=7 col=3  w=41 42 43 | 49 50 51 | 57 58 59
+tb_cnn_layer1_iq_top.dut.u_lb_Q STATE row=7 col=3 in_pixel=123
+tb_cnn_layer1_iq_top.dut.u_lb_Q NEXT_PKT row=7 col=3
+  TOP  = 105 106 107
+  MID  = 113 114 115
+  BOT  = 121 122 123
+tb_cnn_layer1_iq_top.dut.u_lb_Q OUT_PKT row=7 col=3  w=105 106 107 | 113 114 115 | 121 122 123
+
+==============================================
+WINDOW @ t=3775000
+row=7 col=3
+---- I WINDOW ----
+41 42 43
+49 50 51
+57 58 59
+---- Q WINDOW ----
+105
