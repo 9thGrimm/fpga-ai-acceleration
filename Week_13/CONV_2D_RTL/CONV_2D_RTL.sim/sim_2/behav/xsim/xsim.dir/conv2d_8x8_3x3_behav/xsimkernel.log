@@ -1,0 +1,7 @@
+Running: xsim.dir/conv2d_8x8_3x3_behav/xsimk.exe -simmode gui -wdb conv2d_8x8_3x3_behav.wdb -simrunnum 0 -socket 63040
+Design successfully loaded
+Design Loading Memory Usage: 10728 KB (Peak: 10728 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 11284 KB (Peak: 11284 KB)
+Simulation CPU Usage: 15 ms
