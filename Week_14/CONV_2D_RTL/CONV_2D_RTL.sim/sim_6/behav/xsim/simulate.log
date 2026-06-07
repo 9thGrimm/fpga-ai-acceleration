@@ -1,0 +1,49 @@
+Time resolution is 1 ps
+
+==============================================
+Starting Layer-2 standalone convolution test
+Expected outputs:
+filter 0 = 138
+filter 1 = 108
+filter 2 = 970
+filter 3 = 474
+==============================================
+
+Layer-2 input feature map:
+
+Channel 0:
+18 20 22
+34 36 38
+50 52 54
+
+Channel 1:
+0 0 0
+0 0 0
+0 0 0
+
+Channel 2:
+8 8 8
+8 8 8
+8 8 8
+
+Channel 3:
+114 118 122
+146 150 154
+178 182 186
+
+L2_OUT filter=0 value=138 expected=138
+  PASS
+L2_OUT filter=1 value=108 expected=108
+  PASS
+L2_OUT filter=2 value=970 expected=970
+  PASS
+L2_OUT filter=3 value=474 expected=474
+  PASS
+
+==============================================
+Layer-2 standalone test complete
+PASS count = 4
+FAIL count = 0
+==============================================
+LAYER-2 RTL COMPARISON: PASS
+$finish called at time : 145 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_6/new/tb_layer2_conv_engine.sv" Line 114
