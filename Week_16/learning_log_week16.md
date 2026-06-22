@@ -2,9 +2,6 @@ Date: Week 16
 
 Topic: Printing Debug Clean-up and Latency Counters Incorporation
 
-* Started Week 16 after completing the full Layer-1 → Layer-2 → classifier CNN pipeline
-* Focused Week 16 work on cleanup, observability, and measurable pipeline behavior
-
 * Added a debug control parameter to the 3×3 line buffer module
 * Used the debug parameter to disable verbose simulation prints during normal regression runs
 * Preserved the option to re-enable detailed line buffer debug output when needed
@@ -96,3 +93,48 @@ Topic: Printing Debug Clean-up and Latency Counters Incorporation
 * End-to-end latency for current 8×8 I/Q test:
   * 785 cycles
   * 7.85 us at a 100 MHz clock
+
+* Performed the final Week 16 end-to-end rerun before closing the week
+* Re-ran the RTL full-pipeline simulation to regenerate all Week 16 output files
+* Confirmed that the full CNN pipeline still produces the expected final classifier result:
+  * predicted class: 2
+  * score: 970
+* Updated the Python golden model to read RTL dump files from the Week 16 output directory
+* Added an absolute Week 16 base directory for all RTL verification files
+* Added an RTL file path helper to print the exact file being loaded
+* Added file-size and loaded-shape debug prints for RTL dump files
+* Fixed the stale relative-path issue where Python could accidentally read old or empty local files
+* Added support for reading and printing `rtl_metrics.txt`
+* Integrated RTL pipeline metrics into the Python verification flow
+* Confirmed that the Python script now reports both:
+  * functional correctness checks
+  * RTL latency and event-count metrics
+* Verified pooled feature map comparison:
+  * RTL pooled feature map matches Python pooled feature map
+  * pooled feature map comparison: PASS
+* Verified final RTL pipeline metrics:
+  * input pixels accepted: 64
+  * 3×3 windows generated: 36
+  * Layer-1 convolution outputs: 144
+  * pooled outputs: 36
+  * Layer-2 outputs: 4
+  * classifier outputs: 1
+* Verified latency metrics:
+  * input to feature map completion: 777 cycles
+  * input to first Layer-2 output: 779 cycles
+  * input to last Layer-2 output: 782 cycles
+  * input to final CNN valid output: 785 cycles
+  * feature map completion to final CNN valid output: 8 cycles
+* Confirmed that the final Python verification flow prints the RTL metrics successfully
+
+## Week 16 Final Conclusion
+
+* Simulation debug output is clean
+* Final CNN outputs are exposed at the top level
+* Full Layer-1 → Layer-2 → classifier CNN pipeline remains functionally correct
+* Latency and event counters are integrated into the RTL testbench
+* Metrics are printed to the simulation console
+* Metrics are saved automatically to `rtl_metrics.txt`
+* Python golden model reads the correct Week 16 RTL dump files
+* Python verification now reports both correctness and performance metrics
+* Week 16 cleanup, metrics, and verification-flow integration is complete

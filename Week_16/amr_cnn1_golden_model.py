@@ -1,4 +1,4 @@
-﻿import numpy as np
+import numpy as np
 from pathlib import Path
 from collections import defaultdict
 
@@ -6,47 +6,55 @@ from collections import defaultdict
 # ------------------------------------------------------------
 # Generic file loaders
 # ------------------------------------------------------------
-def load_4col_file(filename: str) -> np.ndarray:
+def load_4col_file(filename: str | Path) -> np.ndarray:
     path = Path(filename)
 
+    if path.exists():
+        print(f"[READ_4COL] {path}  size={path.stat().st_size} bytes")
+    else:
+        print(f"[READ_4COL] {path}  NOT FOUND")
+
     if not path.exists():
-        print(f"[WARN] File not found: {filename}")
+        print(f"[WARN] File not found: {path}")
         return np.empty((0, 4), dtype=np.int32)
 
     try:
         data = np.loadtxt(path, dtype=np.int32)
-    except Exception:
-        print(f"[WARN] Could not read {filename} or file is empty.")
+    except Exception as e:
+        print(f"[WARN] Could not read {path} or file is empty.")
+        print(f"[WARN] loadtxt error: {e}")
         return np.empty((0, 4), dtype=np.int32)
 
     if np.size(data) == 0:
-        print(f"[WARN] {filename} is empty.")
+        print(f"[WARN] {path} is empty.")
         return np.empty((0, 4), dtype=np.int32)
 
     if data.ndim == 1:
         if data.shape[0] != 4:
-            raise ValueError(f"Expected 4 columns in {filename}, got shape {data.shape}")
+            raise ValueError(f"Expected 4 columns in {path}, got shape {data.shape}")
         data = data.reshape(1, 4)
 
     if data.shape[1] != 4:
-        raise ValueError(f"Expected 4 columns in {filename}, got shape {data.shape}")
+        raise ValueError(f"Expected 4 columns in {path}, got shape {data.shape}")
+
+    print(f"[READ_4COL] loaded shape={data.shape}")
 
     return data
 
 
-def load_rtl_output(filename: str = "rtl_out.txt") -> np.ndarray:
+def load_rtl_output(filename: str | Path = "rtl_out.txt") -> np.ndarray:
     return load_4col_file(filename)
 
 
-def load_conv_dump(filename: str = "rtl_conv_out.txt") -> np.ndarray:
+def load_conv_dump(filename: str | Path = "rtl_conv_out.txt") -> np.ndarray:
     return load_4col_file(filename)
 
 
-def load_conv_raw_dump(filename: str = "rtl_conv_raw.txt") -> np.ndarray:
+def load_conv_raw_dump(filename: str | Path = "rtl_conv_raw.txt") -> np.ndarray:
     return load_4col_file(filename)
 
 
-def load_window_dump(filename: str = "rtl_windows.txt") -> np.ndarray:
+def load_window_dump(filename: str | Path = "rtl_windows.txt") -> np.ndarray:
     path = Path(filename)
 
     if not path.exists():
@@ -73,7 +81,7 @@ def load_window_dump(filename: str = "rtl_windows.txt") -> np.ndarray:
 
     return data
 
-def load_layer2_full_pipeline_dump(filename: str = "rtl_layer2_full_pipeline_out.txt") -> np.ndarray:
+def load_layer2_full_pipeline_dump(filename: str | Path = "rtl_layer2_full_pipeline_out.txt") -> np.ndarray:
     
     path = Path(filename)
 
@@ -153,8 +161,9 @@ def compare_layer2_vector(name: str, rtl_vec: np.ndarray, py_vec: np.ndarray) ->
         print("Difference RTL - Python:")
         print(rtl_int - py_int)
 
+
 def load_classifier_full_pipeline_dump(
-    filename: str = "rtl_classifier_full_pipeline_out.txt"
+    filename: str | Path = "rtl_classifier_full_pipeline_out.txt"
 ) -> np.ndarray:
     """
     Expected file format:
@@ -166,26 +175,27 @@ def load_classifier_full_pipeline_dump(
     path = Path(filename)
 
     if not path.exists():
-        print(f"[WARN] File not found: {filename}")
+        print(f"[WARN] File not found: {path}")
         return np.empty((0, 2), dtype=np.int32)
 
     try:
         data = np.loadtxt(path, dtype=np.int32)
-    except Exception:
-        print(f"[WARN] Could not read {filename} or file is empty.")
+    except Exception as e:
+        print(f"[WARN] Could not read {path} or file is empty.")
+        print(f"[WARN] loadtxt error: {e}")
         return np.empty((0, 2), dtype=np.int32)
 
     if np.size(data) == 0:
-        print(f"[WARN] {filename} is empty.")
+        print(f"[WARN] {path} is empty.")
         return np.empty((0, 2), dtype=np.int32)
 
     if data.ndim == 1:
         if data.shape[0] != 2:
-            raise ValueError(f"Expected 2 columns in {filename}, got shape {data.shape}")
+            raise ValueError(f"Expected 2 columns in {path}, got shape {data.shape}")
         data = data.reshape(1, 2)
 
     if data.shape[1] != 2:
-        raise ValueError(f"Expected 2 columns in {filename}, got shape {data.shape}")
+        raise ValueError(f"Expected 2 columns in {path}, got shape {data.shape}")
 
     return data
 
@@ -204,7 +214,7 @@ def compare_classifier_output(
         return
 
     rtl_pred_class = int(rtl_data[-1, 0])
-    rtl_pred_max   = int(rtl_data[-1, 1])
+    rtl_pred_max = int(rtl_data[-1, 1])
 
     print("\nRTL Classifier Output:")
     print(f"class={rtl_pred_class}, max_value={rtl_pred_max}")
@@ -397,6 +407,20 @@ def print_sparse_fmap(title: str, fmap: np.ndarray) -> None:
         print(arr)
 
 
+def print_rtl_metrics(metrics_path: str | Path) -> None:
+    print("\n" + "=" * 60)
+    print("RTL PIPELINE METRICS")
+    print("=" * 60)
+
+    path = Path(metrics_path)
+
+    try:
+        with open(path, "r") as f:
+            print(f.read())
+    except FileNotFoundError:
+        print(f"WARNING: metrics file not found: {path}")
+
+
 def compare_dense_maps(name: str, rtl_map: np.ndarray, py_map: np.ndarray) -> None:
     print_fmap(f"RTL {name}", rtl_map)
     print_fmap(f"Python {name}", py_map)
@@ -420,15 +444,22 @@ def compare_sparse_maps(name: str, rtl_map: np.ndarray, py_map: np.ndarray) -> N
     print_fmap(f"Python {name}", py_map)
 
     mask = ~np.isnan(rtl_map)
-    rtl_int = np.where(mask, rtl_map, 0).astype(np.int32)
-    py_int = py_map.astype(np.int32)
-
-    ok = np.array_equal(rtl_int[mask], py_int[mask])
+    populated = int(np.count_nonzero(mask))
 
     print("\n" + "=" * 80)
     print(f"{name.upper()} COMPARISON")
     print("=" * 80)
-    print(f"Compared populated entries: {int(np.count_nonzero(mask))}/{int(mask.size)}")
+    print(f"Compared populated entries: {populated}/{int(mask.size)}")
+
+    if populated == 0:
+        print("FAIL")
+        print("No RTL entries were populated. Check RTL dump path or file contents.")
+        return
+
+    rtl_int = np.where(mask, rtl_map, 0).astype(np.int32)
+    py_int = py_map.astype(np.int32)
+
+    ok = np.array_equal(rtl_int[mask], py_int[mask])
 
     if ok:
         print("PASS")
@@ -747,10 +778,10 @@ def print_layer2_debug(fmap: np.ndarray, weights: np.ndarray, out_raw: np.ndarra
         print(f"Layer-2 ReLU output filter {oc}: {out_relu[oc]}")
         print(f"Layer-2 Quant output filter {oc}: {out_quant[oc]}")
 
-        # ------------------------------------------------------------
+
+# ------------------------------------------------------------
 # Classifier Golden Model: Argmax over Layer-2 outputs
 # ------------------------------------------------------------
-
 CLASS_NAMES = {
     0: "Class_0",
     1: "Class_1",
@@ -799,16 +830,37 @@ def print_classifier_debug(
 
 
 # ------------------------------------------------------------
+# Week 16 RTL output directory
+# ------------------------------------------------------------
+BASE_DIR = Path(r"C:/Users/sagar/Documents/FPGA_AI_STUFF/Week_16")
+
+
+def rtl_file(filename: str) -> Path:
+    path = BASE_DIR / filename
+
+    if path.exists():
+        print(f"[LOAD] {filename}: {path}  size={path.stat().st_size} bytes")
+    else:
+        print(f"[LOAD] {filename}: {path}  NOT FOUND")
+
+    return path
+
+
+# ------------------------------------------------------------
 # Main
 # ------------------------------------------------------------
 def main():
-    rtl_pool_data = load_rtl_output("rtl_out.txt")
-    rtl_conv_quant_data = load_conv_dump("rtl_conv_out.txt")
-    rtl_conv_raw_data = load_conv_raw_dump("rtl_conv_raw.txt")
-    rtl_window_data = load_window_dump("rtl_windows.txt")
-    rtl_l2_full_data = load_layer2_full_pipeline_dump("rtl_layer2_full_pipeline_out.txt")
-    rtl_classifier_full_data = load_classifier_full_pipeline_dump("rtl_classifier_full_pipeline_out.txt")
-
+    rtl_pool_data = load_rtl_output(rtl_file("rtl_out.txt"))
+    rtl_conv_quant_data = load_conv_dump(rtl_file("rtl_conv_out.txt"))
+    rtl_conv_raw_data = load_conv_raw_dump(rtl_file("rtl_conv_raw.txt"))
+    rtl_window_data = load_window_dump(rtl_file("rtl_windows.txt"))
+    rtl_l2_full_data = load_layer2_full_pipeline_dump(
+        rtl_file("rtl_layer2_full_pipeline_out.txt")
+    )
+    rtl_classifier_full_data = load_classifier_full_pipeline_dump(
+        rtl_file("rtl_classifier_full_pipeline_out.txt")
+    )
+    metrics_path = rtl_file("rtl_metrics.txt")
 
     img_I, img_Q = build_input_images()
     weights = get_weights()
@@ -821,16 +873,15 @@ def main():
     # ------------------------------------------------------
     # Layer-2 Golden Model
     # ------------------------------------------------------
-
     layer2_weights = get_layer2_weights()
 
     # Use Layer-1 pooled fmap in RTL channel order because that is the verified RTL-facing order
     py_pool_dense_rtl_order = remap_python_channels_to_rtl(py_pool_dense)
 
     py_l2_raw = layer2_conv_3x3_multichannel(
-            py_pool_dense_rtl_order,
-            layer2_weights,
-            bias=None
+        py_pool_dense_rtl_order,
+        layer2_weights,
+        bias=None
     )
 
     py_l2_relu = relu(py_l2_raw)
@@ -892,22 +943,44 @@ def main():
     py_conv_raw_rtl_order = remap_python_channels_to_rtl(py_conv_raw)
     py_quant_rtl_order = remap_python_channels_to_rtl(py_quant)
 
-    compare_sparse_maps("Raw Conv Feature Map (RTL Channel Order)", rtl_conv_raw_fmap, py_conv_raw_rtl_order)
-    compare_sparse_maps("Quantized Conv Feature Map (RTL Channel Order)", rtl_conv_quant_fmap, py_quant_rtl_order)
+    compare_sparse_maps(
+        "Raw Conv Feature Map (RTL Channel Order)",
+        rtl_conv_raw_fmap,
+        py_conv_raw_rtl_order
+    )
+    compare_sparse_maps(
+        "Quantized Conv Feature Map (RTL Channel Order)",
+        rtl_conv_quant_fmap,
+        py_quant_rtl_order
+    )
 
     print("\n" + "#" * 80)
     print("POOL OUTPUT CHECK")
     print("#" * 80)
 
+    print(f"[DATA] rtl_pool_data shape = {rtl_pool_data.shape}")
+
     if rtl_pool_data.shape[0] == 0:
         print("[INFO] rtl_out.txt is empty: no pooled RTL outputs were generated.")
         print("[INFO] Raw and quantized conv analysis above is still valid.")
+        print_rtl_metrics(metrics_path)
         return
 
-    rtl_pool_fmap = reconstruct_pool_fmap(rtl_pool_data, num_channels=4, rows=3, cols=3)
+    rtl_pool_fmap = reconstruct_pool_fmap(
+        rtl_pool_data,
+        num_channels=4,
+        rows=3,
+        cols=3
+    )
     py_pool_dense_rtl_order = remap_python_channels_to_rtl(py_pool_dense)
 
-    compare_dense_maps("Pooled Feature Map (RTL Channel Order)", rtl_pool_fmap, py_pool_dense_rtl_order)
+    compare_dense_maps(
+        "Pooled Feature Map (RTL Channel Order)",
+        rtl_pool_fmap,
+        py_pool_dense_rtl_order
+    )
+
+    print_rtl_metrics(metrics_path)
 
 
 if __name__ == "__main__":
