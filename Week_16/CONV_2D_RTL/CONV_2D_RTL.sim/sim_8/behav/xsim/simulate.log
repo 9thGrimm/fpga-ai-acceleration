@@ -1,0 +1,37 @@
+Time resolution is 1 ps
+
+==============================================
+Starting Full CNN pipeline test
+Input: 8x8 I/Q stream
+Expected Layer-2 outputs:
+filter 0 = 138
+filter 1 = 108
+filter 2 = 970
+filter 3 = 474
+Expected classifier output:
+class = 2
+max_value = 970
+==============================================
+
+==============================================
+Finished driving inputs
+==============================================
+
+==============================================
+FMAP_DONE @ t=7805000
+Layer-1 fmap complete. Starting Layer-2.
+==============================================
+L2_FULL_OUT filter=0 value=138 expected=138
+  PASS
+L2_FULL_OUT filter=1 value=108 expected=108
+  PASS
+L2_FULL_OUT filter=2 value=970 expected=970
+  PASS
+L2_FULL_OUT filter=3 value=474 expected=474
+  PASS
+
+==============================================
+FULL PIPELINE CLASSIFIER OUTPUT
+==============================================
+CLASSIFIER_OUT class=2 max_value=970 expected_class=2 expected_max=970
+FULL PIPELINE CLASSIFIER OUTPUT: PASS

@@ -1,0 +1,103 @@
+Time resolution is 1 ps
+
+==============================================
+Starting Week 16 full CNN pipeline cleanup/metrics test
+Input: 8x8 I/Q stream
+Expected Layer-2 outputs:
+filter 0 = 138
+filter 1 = 108
+filter 2 = 970
+filter 3 = 474
+Expected classifier output:
+class = 2
+max_value = 970
+==============================================
+
+==============================================
+Finished driving inputs
+==============================================
+
+==============================================
+FMAP_DONE @ t=7805000
+Layer-1 fmap complete. Starting Layer-2.
+==============================================
+L2_FULL_OUT filter=0 value=138 expected=138
+  PASS
+L2_FULL_OUT filter=1 value=108 expected=108
+  PASS
+L2_FULL_OUT filter=2 value=970 expected=970
+  PASS
+L2_FULL_OUT filter=3 value=474 expected=474
+  PASS
+
+==============================================
+FULL PIPELINE CLASSIFIER OUTPUT
+==============================================
+CLASSIFIER_OUT class=2 max_value=970 expected_class=2 expected_max=970
+FULL PIPELINE CLASSIFIER OUTPUT: PASS
+
+==============================================
+Simulation done
+==============================================
+
+==============================================
+Layer-1 Feature Map Buffer Dump
+==============================================
+
+Channel 0:
+18 20 22
+34 36 38
+50 52 54
+
+Channel 1:
+0 0 0
+0 0 0
+0 0 0
+
+Channel 2:
+8 8 8
+8 8 8
+8 8 8
+
+Channel 3:
+114 118 122
+146 150 154
+178 182 186
+
+==============================================
+Layer-2 Full Pipeline Result
+PASS count = 4
+FAIL count = 0
+==============================================
+FULL PIPELINE LAYER-2 COMPARISON: PASS
+
+==============================================
+Classifier Full Pipeline Result
+PASS count = 1
+FAIL count = 0
+==============================================
+FULL PIPELINE CLASSIFIER COMPARISON: PASS
+
+==============================================
+Pipeline Metrics
+==============================================
+Input pixels accepted      = 64
+3x3 windows generated      = 36
+Layer-1 conv outputs       = 144
+Pooled outputs             = 36
+Layer-2 outputs            = 4
+Classifier outputs         = 1
+
+first_input_cycle          = 2
+fmap_done_cycle            = 779
+first_l2_cycle             = 781
+last_l2_cycle              = 784
+cnn_valid_cycle            = 787
+
+Latency: input -> fmap_done     = 777 cycles
+Latency: input -> first L2 out  = 779 cycles
+Latency: input -> last L2 out   = 782 cycles
+Latency: input -> cnn_valid     = 785 cycles
+Latency: fmap_done -> cnn_valid = 8 cycles
+==============================================
+$finish called at time : 8095 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_w_latency_counters/new/tb_cnn_layer12_classifier_counters.sv" Line 297

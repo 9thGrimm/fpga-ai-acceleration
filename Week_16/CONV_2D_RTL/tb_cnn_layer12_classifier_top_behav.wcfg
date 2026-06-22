@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_cnn_layer12_classifier_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_cnn_layer12_classifier_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="20.000001 us"></ZoomEndTime>
+      <Cursor1Time time="7.885001 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="231"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/in_valid" type="logic">
+      <obj_property name="ElementShortName">in_valid</obj_property>
+      <obj_property name="ObjectShortName">in_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/in_ready" type="logic">
+      <obj_property name="ElementShortName">in_ready</obj_property>
+      <obj_property name="ObjectShortName">in_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/in_I" type="array">
+      <obj_property name="ElementShortName">in_I[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_I[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/in_Q" type="array">
+      <obj_property name="ElementShortName">in_Q[7:0]</obj_property>
+      <obj_property name="ObjectShortName">in_Q[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/idx" type="array">
+      <obj_property name="ElementShortName">idx[31:0]</obj_property>
+      <obj_property name="ObjectShortName">idx[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/f_win" type="array">
+      <obj_property name="ElementShortName">f_win[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f_win[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/f_conv_raw" type="array">
+      <obj_property name="ElementShortName">f_conv_raw[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f_conv_raw[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/f_conv" type="array">
+      <obj_property name="ElementShortName">f_conv[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f_conv[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/f_pool" type="array">
+      <obj_property name="ElementShortName">f_pool[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f_pool[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/f_l2_full" type="array">
+      <obj_property name="ElementShortName">f_l2_full[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f_l2_full[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/f_classifier_full" type="array">
+      <obj_property name="ElementShortName">f_classifier_full[31:0]</obj_property>
+      <obj_property name="ObjectShortName">f_classifier_full[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/l2_pass_count" type="array">
+      <obj_property name="ElementShortName">l2_pass_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">l2_pass_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/l2_fail_count" type="array">
+      <obj_property name="ElementShortName">l2_fail_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">l2_fail_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/classifier_pass_count" type="array">
+      <obj_property name="ElementShortName">classifier_pass_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">classifier_pass_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/classifier_fail_count" type="array">
+      <obj_property name="ElementShortName">classifier_fail_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">classifier_fail_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/expected_l2" type="array">
+      <obj_property name="ElementShortName">expected_l2[0:3][31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_l2[0:3][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/expected_class" type="array">
+      <obj_property name="ElementShortName">expected_class[1:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_class[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/expected_max_value" type="array">
+      <obj_property name="ElementShortName">expected_max_value[31:0]</obj_property>
+      <obj_property name="ObjectShortName">expected_max_value[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/PIX_W" type="array">
+      <obj_property name="ElementShortName">PIX_W[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PIX_W[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/NUM_INPUTS" type="array">
+      <obj_property name="ElementShortName">NUM_INPUTS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">NUM_INPUTS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_cnn_layer12_classifier_top/TIMEOUT_CYCLES" type="array">
+      <obj_property name="ElementShortName">TIMEOUT_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">TIMEOUT_CYCLES[31:0]</obj_property>
+   </wvobject>
+</wave_config>
