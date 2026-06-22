@@ -100,4 +100,4 @@ Latency: input -> last L2 out   = 782 cycles
 Latency: input -> cnn_valid     = 785 cycles
 Latency: fmap_done -> cnn_valid = 8 cycles
 ==============================================
-$finish called at time : 8095 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_w_latency_counters/new/tb_cnn_layer12_classifier_counters.sv" Line 297
+$finish called at time : 8095 ns : File "C:/Users/sagar/CONV_2D_RTL/CONV_2D_RTL.srcs/sim_w_latency_counters/new/tb_cnn_layer12_classifier_counters.sv" Line 348

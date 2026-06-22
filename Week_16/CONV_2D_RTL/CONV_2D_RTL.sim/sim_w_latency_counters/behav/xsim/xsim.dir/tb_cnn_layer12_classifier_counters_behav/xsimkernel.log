@@ -1,7 +1,7 @@
-Running: xsim.dir/tb_cnn_layer12_classifier_counters_behav/xsimk.exe -simmode gui -wdb tb_cnn_layer12_classifier_counters_behav.wdb -simrunnum 0 -socket 59903
+Running: xsim.dir/tb_cnn_layer12_classifier_counters_behav/xsimk.exe -simmode gui -wdb tb_cnn_layer12_classifier_counters_behav.wdb -simrunnum 0 -socket 53857
 Design successfully loaded
-Design Loading Memory Usage: 10516 KB (Peak: 10516 KB)
-Design Loading CPU Usage: 46 ms
+Design Loading Memory Usage: 10124 KB (Peak: 10124 KB)
+Design Loading CPU Usage: 15 ms
 Simulation completed
-Simulation Memory Usage: 11764 KB (Peak: 11764 KB)
-Simulation CPU Usage: 46 ms
+Simulation Memory Usage: 11280 KB (Peak: 11280 KB)
+Simulation CPU Usage: 15 ms

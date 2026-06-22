@@ -4,6 +4,7 @@ Topic: Printing Debug Clean-up and Latency Counters Incorporation
 
 * Started Week 16 after completing the full Layer-1 → Layer-2 → classifier CNN pipeline
 * Focused Week 16 work on cleanup, observability, and measurable pipeline behavior
+
 * Added a debug control parameter to the 3×3 line buffer module
 * Used the debug parameter to disable verbose simulation prints during normal regression runs
 * Preserved the option to re-enable detailed line buffer debug output when needed
@@ -53,3 +54,45 @@ Topic: Printing Debug Clean-up and Latency Counters Incorporation
   * input to last Layer-2 output: 782 cycles
   * input to final CNN valid output: 785 cycles
   * Layer-1 feature map completion to final CNN valid output: 8 cycles
+* Confirmed that the full pipeline still passes after adding cleanup and metrics logic
+
+* Added a dedicated metrics output file:
+  * `rtl_metrics.txt`
+* Added a new file handle in the full-pipeline testbench:
+  * `f_metrics`
+* Opened the metrics file in the Week 16 output directory
+* Added the metrics file handle to the output-file open error check
+* Added `$fwrite` support for saving the same pipeline metrics that are printed to the console
+* Saved event-count metrics to file:
+  * input pixels accepted: 64
+  * 3×3 windows generated: 36
+  * Layer-1 convolution outputs: 144
+  * pooled outputs: 36
+  * Layer-2 outputs: 4
+  * classifier outputs: 1
+* Saved cycle timestamp metrics to file:
+  * first input cycle: 2
+  * feature map done cycle: 779
+  * first Layer-2 output cycle: 781
+  * last Layer-2 output cycle: 784
+  * final CNN valid cycle: 787
+* Saved latency metrics to file:
+  * input to feature map completion: 777 cycles
+  * input to first Layer-2 output: 779 cycles
+  * input to last Layer-2 output: 782 cycles
+  * input to final CNN valid output: 785 cycles
+  * feature map completion to final CNN valid output: 8 cycles
+* Verified that `rtl_metrics.txt` is generated correctly
+* Confirmed that the saved metrics match the console metrics
+* Confirmed that the full CNN pipeline remains functionally correct after adding the metrics file dump
+
+## Current Verified Pipeline Result
+
+* Layer-2 logits:
+  * `[138, 108, 970, 474]`
+* Final classifier output:
+  * class: 2
+  * score: 970
+* End-to-end latency for current 8×8 I/Q test:
+  * 785 cycles
+  * 7.85 us at a 100 MHz clock

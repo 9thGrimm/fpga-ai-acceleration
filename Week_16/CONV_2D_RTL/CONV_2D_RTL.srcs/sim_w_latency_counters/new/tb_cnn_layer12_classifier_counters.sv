@@ -22,6 +22,7 @@ module tb_cnn_layer12_classifier_counters;
   integer f_pool;
   integer f_l2_full;
   integer f_classifier_full;
+  integer f_metrics;
 
   integer l2_pass_count;
   integer l2_fail_count;
@@ -90,13 +91,15 @@ module tb_cnn_layer12_classifier_counters;
     f_pool            = $fopen("C:/Users/sagar/Documents/FPGA_AI_STUFF/Week_16/rtl_out.txt", "w");
     f_l2_full         = $fopen("C:/Users/sagar/Documents/FPGA_AI_STUFF/Week_16/rtl_layer2_full_pipeline_out.txt", "w");
     f_classifier_full = $fopen("C:/Users/sagar/Documents/FPGA_AI_STUFF/Week_16/rtl_classifier_full_pipeline_out.txt", "w");
+    f_metrics         = $fopen("C:/Users/sagar/Documents/FPGA_AI_STUFF/Week_16/rtl_metrics.txt", "w");
 
     if (f_win == 0 ||
         f_conv_raw == 0 ||
         f_conv == 0 ||
         f_pool == 0 ||
         f_l2_full == 0 ||
-        f_classifier_full == 0) begin
+        f_classifier_full == 0 ||
+        f_metrics == 0) begin
       $display("ERROR: failed to open one or more output files");
       $finish;
     end
@@ -189,8 +192,8 @@ module tb_cnn_layer12_classifier_counters;
     wait_cycles = 0;
 
     while (!cnn_valid_seen && wait_cycles < TIMEOUT_CYCLES) begin
-        @(posedge clk);
-        wait_cycles = wait_cycles + 1;
+      @(posedge clk);
+      wait_cycles = wait_cycles + 1;
     end
 
     repeat (20) @(posedge clk);
@@ -238,7 +241,7 @@ module tb_cnn_layer12_classifier_counters;
     end
 
     // ----------------------------------------------------------
-    // Latency Metrics summary
+    // Latency Metrics summary: console
     // ----------------------------------------------------------
     $display("\n==============================================");
     $display("Pipeline Metrics");
@@ -287,12 +290,60 @@ module tb_cnn_layer12_classifier_counters;
 
     $display("==============================================");
 
+    // ----------------------------------------------------------
+    // Latency Metrics summary: file dump
+    // ----------------------------------------------------------
+    $fwrite(f_metrics, "Week 16 Pipeline Metrics\n");
+    $fwrite(f_metrics, "========================\n\n");
+
+    $fwrite(f_metrics, "Input pixels accepted      = %0d\n", input_accept_count);
+    $fwrite(f_metrics, "3x3 windows generated      = %0d\n", window_count);
+    $fwrite(f_metrics, "Layer-1 conv outputs       = %0d\n", conv_output_count);
+    $fwrite(f_metrics, "Pooled outputs             = %0d\n", pool_output_count);
+    $fwrite(f_metrics, "Layer-2 outputs            = %0d\n", l2_output_count);
+    $fwrite(f_metrics, "Classifier outputs         = %0d\n", classifier_output_count);
+
+    $fwrite(f_metrics, "\n");
+    $fwrite(f_metrics, "first_input_cycle          = %0d\n", first_input_cycle);
+    $fwrite(f_metrics, "fmap_done_cycle            = %0d\n", fmap_done_cycle);
+    $fwrite(f_metrics, "first_l2_cycle             = %0d\n", first_l2_cycle);
+    $fwrite(f_metrics, "last_l2_cycle              = %0d\n", last_l2_cycle);
+    $fwrite(f_metrics, "cnn_valid_cycle            = %0d\n", cnn_valid_cycle);
+
+    $fwrite(f_metrics, "\n");
+
+    if (first_input_seen && fmap_done_seen) begin
+      $fwrite(f_metrics, "Latency: input -> fmap_done     = %0d cycles\n",
+              fmap_done_cycle - first_input_cycle);
+    end
+
+    if (first_input_seen && first_l2_seen) begin
+      $fwrite(f_metrics, "Latency: input -> first L2 out  = %0d cycles\n",
+              first_l2_cycle - first_input_cycle);
+    end
+
+    if (first_input_seen && first_l2_seen) begin
+      $fwrite(f_metrics, "Latency: input -> last L2 out   = %0d cycles\n",
+              last_l2_cycle - first_input_cycle);
+    end
+
+    if (first_input_seen && cnn_valid_seen) begin
+      $fwrite(f_metrics, "Latency: input -> cnn_valid     = %0d cycles\n",
+              cnn_valid_cycle - first_input_cycle);
+    end
+
+    if (fmap_done_seen && cnn_valid_seen) begin
+      $fwrite(f_metrics, "Latency: fmap_done -> cnn_valid = %0d cycles\n",
+              cnn_valid_cycle - fmap_done_cycle);
+    end
+
     $fclose(f_win);
     $fclose(f_conv_raw);
     $fclose(f_conv);
     $fclose(f_pool);
     $fclose(f_l2_full);
     $fclose(f_classifier_full);
+    $fclose(f_metrics);
 
     $finish;
   end

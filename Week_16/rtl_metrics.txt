@@ -1,0 +1,21 @@
+Week 16 Pipeline Metrics
+========================
+
+Input pixels accepted      = 64
+3x3 windows generated      = 36
+Layer-1 conv outputs       = 144
+Pooled outputs             = 36
+Layer-2 outputs            = 4
+Classifier outputs         = 1
+
+first_input_cycle          = 2
+fmap_done_cycle            = 779
+first_l2_cycle             = 781
+last_l2_cycle              = 784
+cnn_valid_cycle            = 787
+
+Latency: input -> fmap_done     = 777 cycles
+Latency: input -> first L2 out  = 779 cycles
+Latency: input -> last L2 out   = 782 cycles
+Latency: input -> cnn_valid     = 785 cycles
+Latency: fmap_done -> cnn_valid = 8 cycles
